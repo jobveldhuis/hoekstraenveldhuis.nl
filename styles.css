@@ -1,0 +1,63 @@
+html, body
+{
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Prata", serif;
+    color: #333;
+}
+h1
+{
+    font-size: 38px;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.navigation
+{
+    width: 100%;
+    font-family: "Prata", serif;
+}
+nav.navbar
+{
+    justify-content: space-between;
+}
+.navbar-brand img
+{
+    height: 60px;
+}
+ul.nav
+{
+    list-style-type: none;
+}
+
+main
+{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+main div.intro
+{
+    position: relative;
+    top: -10%;
+    max-width: 70%;
+    font-size: 16px;
+}
+main div.intro p
+{
+    margin-bottom: 0;
+}
