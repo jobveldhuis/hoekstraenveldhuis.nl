@@ -35,13 +35,22 @@ nav.navbar
     justify-content: space-between;
     font-size: 14px;
 }
-#navbar
-{
-    justify-content: flex-end;
-}
 .navbar-brand img
 {
     height: 60px;
+}
+.navbar-collapse
+{
+    overflow: hidden;
+    top: 100%;
+}
+
+.navbar-collapse.collapsing, .navbar-collapse.show
+{
+    position: absolute;
+    background-color: #C8C8C8;
+    display: block;
+    width: 100%;
 }
 ul.nav
 {
@@ -50,6 +59,7 @@ ul.nav
 .nav-link
 {
     padding: 0 1.5rem !important;
+    line-height: 50px;
 }
 .nav-link a
 {
