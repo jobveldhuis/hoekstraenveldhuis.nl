@@ -6,3 +6,6 @@ As of may 2020, the conscious decision has been made to make this an unlicensed 
 
 ## Future plans?
 Our website was originally built in Webflow (yeah, I know). After this, we decided to port our Webflow export to a Bootstrap-powered HTML website. In the future, we will be transferring this HTML template into a WordPress theme. The original HTML files will then be moved to a new branch.
+
+## Currently in use?
+No, we are still working on the HTML port of the original Webflow files.
