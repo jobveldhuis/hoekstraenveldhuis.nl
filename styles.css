@@ -33,6 +33,11 @@ h1
 nav.navbar
 {
     justify-content: space-between;
+    font-size: 14px;
+}
+#navbar
+{
+    justify-content: flex-end;
 }
 .navbar-brand img
 {
@@ -41,6 +46,19 @@ nav.navbar
 ul.nav
 {
     list-style-type: none;
+}
+.nav-link
+{
+    padding: 0 1.5rem !important;
+}
+.nav-link a
+{
+    color: #333;
+}
+.nav-link a:hover
+{
+    color: #2274a5;
+    text-decoration: none;
 }
 
 main
@@ -52,12 +70,6 @@ main
 }
 main div.intro
 {
-    position: relative;
-    top: -10%;
     max-width: 70%;
     font-size: 16px;
-}
-main div.intro p
-{
-    margin-bottom: 0;
 }
