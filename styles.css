@@ -6,7 +6,7 @@ html, body
     font-size: 14px;
     scroll-behavior: auto;
 }
-h1, h2, h3, h4, h5, h6
+h1, h2, h4, h5, h6
 {
     font-family: "Prata", serif;
     color: #333;
@@ -20,13 +20,24 @@ h2
     color: #676767;
     margin-top: 20px;
 }
+h3
+{
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #676767;
+}
+h4
+{
+    font-size: 40px;
+}
 ul li a
 {
     display: block;
 }
 .container-fluid
 {
-    height: 100%;
+    min-height: 100%;
     justify-content: center;
 }
 .container-fluid#intro
@@ -150,6 +161,22 @@ div.intro .text-container
 div.cases
 {
     width: 80%;
+}
+div.cases-grid-container
+{
+    display: grid;
+    grid-gap: 8%;
+    grid-row-gap: 140px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 60px;
+}
+.case-grid-item img
+{
+    height: 250px;
+}
+.grid-image
+{
+    margin: auto;
 }
 
 @media only screen and (max-width: 991px){
