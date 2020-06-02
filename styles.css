@@ -35,6 +35,11 @@ ul li a
 {
     display: block;
 }
+a:hover
+{
+    text-decoration: none;
+    color: #2274a5;
+}
 .container-fluid
 {
     justify-content: center;
@@ -49,6 +54,10 @@ ul li a
     min-height: 100%;
     background-color: #e9f9f9;
 }
+.container-fluid#cta
+{
+    background-color: #363636;
+}
 .container-fluid#footer
 {
     background-color: #000;
@@ -60,8 +69,8 @@ ul li a
 {
     position: absolute;
     top: 0;
-    margin: auto auto auto 10%;
-    width: 80%;
+    left: calc(50% - (940px * 0.5));
+    width: 940px;
     align-self: center;
     font-family: "Prata", serif;
     font-size: 14px;
@@ -146,17 +155,17 @@ ul.nav
 .nav a:hover
 {
     color: #2274a5 !important;
-    text-decoration: none;
 }
-div.intro, div.cases, div.about
+div.intro, div.cases, div.about, div.cta, div.footer
 {
-    width: 80%;
+    max-width: 940px;
 }
 
 div.intro
 {
     position: relative;
     top: -5%;
+    width: 80%;
     justify-content: center;
 }
 div.intro .text-container
@@ -176,13 +185,13 @@ div.grid-container
     grid-template-columns: repeat(2, 1fr);
     margin: 60px 0;
 }
-.grid-image img
-{
-    height: 250px;
-}
-.grid-image
+div.grid-container div
 {
     margin: auto;
+}
+.grid-image img
+{
+    height: 300px;
 }
 
 .about h2
@@ -190,10 +199,46 @@ div.grid-container
     text-align: right;
 }
 
+.services h3
+{
+    font-size: 24px;
+    font-family: "Prata", serif;
+    line-height: 40px;
+    margin: 0;
+}
+.services h3 a {
+    color: #333;
+    transition: all 200ms ease-in-out;
+}
+.services h3 a:hover{
+    color: #2274a5;
+    text-decoration: none;
+}
+div.services div
+{
+    margin: 0 auto;
+    text-align: left;
+}
+
+div#cta:hover
+{
+    background-color: #2274a5;
+}
+
+.cta
+{
+    padding: 30px 0;
+}
+.cta h2, .cta p
+{
+    margin: 0;
+    color: white;
+}
+
 .footer
 {
     padding: 30px 0;
-    width: 80%;
+    width: 940px;
 }
 .footer-grid
 {
@@ -208,5 +253,14 @@ div.grid-container
 }
 .footer-grid div a:hover
 {
-    color: #2274a5;
+    color: #fff;
+}
+
+.hidedesktop
+{
+    display: none;
+}
+.hidemobile
+{
+    display: block;
 }

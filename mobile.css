@@ -1,0 +1,43 @@
+body
+{
+    width: 100%;
+    font-size: 14px;
+}
+h1
+{
+    font-size: 30px;
+}
+.navigation
+{
+    width: 100%;
+    left: auto;
+}
+.navbar
+{
+    position: relative;
+    margin: 0 2rem;
+}
+div.intro, div.cases, div.about, div.cta, div.footer
+{
+    width: 100%;
+    margin: 0 2rem;
+}
+
+div.intro .text-container
+{
+    max-width: none;
+    text-align: center;
+}
+lottie-player
+{
+    margin: 10px auto 0 auto !important;
+}
+
+.hidemobile
+{
+    display: none;
+}
+.hidedesktop
+{
+    display: block;
+}

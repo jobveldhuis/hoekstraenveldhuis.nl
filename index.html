@@ -20,18 +20,12 @@
           href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic%7CPrata:regular"
           media="all">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 991px)" href="mobile.css"/>
 
     <!-- Other dependencies -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
-       $(document).ready(function() {
-           $("button").click(function(){
-               $("p").toggleClass("main");
-           });
-       })
-    </script>
 
 </head>
 <body>
@@ -81,30 +75,36 @@
                     <h4>Van wollige taal en jargon, naar leesbare taal voor kinderen en volwassenen.</h4>
                 </div>
                 <div class="grid-image"><img src="static/henv-client-highlight-1.svg"></div>
-                <div class="grid-image"><img src="static/henv-client-highlight-2.svg"></div>
+                <div class="grid-image hidemobile"><img src="static/henv-client-highlight-2.svg"></div>
                 <div>
                     <h3>Esthégi</h3>
                     <h4>Wervende teksten over gevoelige onderwerpen, geoptimaliseerd voor zoekmachines.</h4>
                 </div>
+                <div class="grid-image hidedesktop"><img src="static/henv-client-highlight-2.svg"></div>
                 <div>
                     <h3>TomTom Interim Management</h3>
                     <h4>Adviezen en bijstand op het gebied van communicatie van kernwaarden.</h4>
                 </div>
                 <div class="grid-image"><img src="static/henv-client-highlight-3.svg"></div>
-                <div class="grid-image"><img src="static/henv-client-highlight-4.svg"></div>
+                <div class="grid-image hidemobile"><img src="static/henv-client-highlight-4.svg"></div>
                 <div>
                     <h3>ISG Arcus</h3>
                     <h4>Toneelstukken, scripts en auditiemateriaal voor verschillende uitvoeringen.</h4>
                 </div>
+                <div class="grid-image hidedesktop"><img src="static/henv-client-highlight-4.svg"></div>
             </div>
         </div>
     </div>
     <div class="container-fluid d-flex" id="about">
         <div class="about">
             <h2>Wat we doen</h2>
-            <div class="grid-container">
+            <div class="grid-container services">
                 <div>
-
+                    <h3 class="services-link"><a href="">Tekstschrijven</a></h3>
+                    <h3 class="services-link"><a href="">Zoekmachineoptimalisatie</a></h3>
+                    <h3 class="services-link"><a href="">Vertalingen</a></h3>
+                    <h3 class="services-link"><a href="">Communicatieadvies</a></h3>
+                    <h3 class="services-link"><a href="">Tekstcontrole</a></h3>
                 </div>
                 <div>
                     <p>We helpen met het vinden van de juiste woorden voor uw verhaal. Of het gaat om een vacaturetekst of een vertaling van een boek: bij Hoekstra & Veldhuis bent u aan het juiste adres. </p>
@@ -113,6 +113,15 @@
             </div>
         </div>
     </div>
+    <a href="/contact.html">
+        <div class="container-fluid d-flex" id="cta">
+            <div class="cta">
+                <h2>Klaar voor de volgende stap?</h2>
+                <p>Neem direct vrijblijvend contact op. We denken graag mee.</p>
+            </div>
+        </div>
+    </a>
+
     <div class="container-fluid d-flex" id="footer">
         <div class="footer">
             <div class="footer-grid">
