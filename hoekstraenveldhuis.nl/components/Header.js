@@ -15,7 +15,7 @@ const Header = props => (
         <nav className={`${styles.navbar} navbar-expand-lg d-flex navbar-light`}>
         <span className={`navbar-brand`}>
             <Link href="/">
-                <a><img src="/henv_logo.png" className={styles.logo} alt="Logo Hoekstra & Veldhuis"/></a>
+                <a><img src="/images/henv_logo.png" className={styles.logo} alt="Logo Hoekstra & Veldhuis"/></a>
             </Link>
         </span>
             <button className={`${styles.navbarToggler} ${styles.collapsed} navbar-toggler`} type="button"
