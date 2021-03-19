@@ -9,7 +9,7 @@ import React from 'react'
 import styles from '../styles/BookComponent.module.css'
 
 
-const defaultImage = '/omslag-inspecteur-vos.png';
+const defaultImage = '/images/omslag-inspecteur-vos.png';
 
 const BookComponent = props => {
     let pricingString = '';
