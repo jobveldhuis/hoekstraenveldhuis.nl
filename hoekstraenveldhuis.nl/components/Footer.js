@@ -26,7 +26,30 @@ const Footer = props => (
           </Link>
         )}
         <div className={styles.footerContainer}>
-
+            <div className={styles.footerContent}>
+                <div className={styles.footerGrid}>
+                    <div>
+                        <strong>Hoekstra & Veldhuis B.V.</strong><br />
+                        <a href={"mailto:info@henv.online"}>info@henv.online</a><br />
+                        Copyright 2021
+                    </div>
+                    <div>
+                        <strong>Volg ons op</strong><br />
+                        <a href={"https://facebook.com/hoekstraenveldhuis"} rel={"nofollow"}>Facebook</a><br />
+                        <a href={"https://instagram.com/hoekstraenveldhuis"} rel={"nofollow"}>Instagram</a><br />
+                    </div>
+                    <div>
+                        <strong>Kantoor</strong><br />
+                        Ekenstein 38<br />
+                        8226RH te Lelystad
+                    </div>
+                    <div>
+                        KvK 71210229 <br />
+                        BTW NL858624205B01 <br />
+                        <a href={"#"}>Algemene Voorwaarden</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 )
