@@ -2,9 +2,9 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
 
-export default function Home() {
-    return (
-        <div className={"websiteContainer"}>
+export default function Home () {
+  return (
+        <div className={'websiteContainer'}>
             <Head>
                 {/* Website meta data */}
                 {/* TODO: Add OG and schema markup */}
@@ -22,5 +22,5 @@ export default function Home() {
                 Over Ons
             </Layout>
         </div>
-    )
+  )
 }
