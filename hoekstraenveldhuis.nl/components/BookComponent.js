@@ -8,16 +8,15 @@ import React from 'react'
  */
 import styles from '../styles/BookComponent.module.css'
 
-
-const defaultImage = '/images/omslag-inspecteur-vos.png';
+const defaultImage = '/images/omslag-inspecteur-vos.png'
 
 const BookComponent = props => {
-    let pricingString = '';
-    if (props.price.paperback) pricingString = pricingString.concat(`€ ${props.price.paperback} (paperback)`);
-    if (props.price.ebook) pricingString = pricingString.concat(` € ${props.price.ebook} (e-book)`);
-    pricingString = pricingString.trim();
+  let pricingString = ''
+  if (props.price.paperback) pricingString = pricingString.concat(`€ ${props.price.paperback} (paperback)`)
+  if (props.price.ebook) pricingString = pricingString.concat(` € ${props.price.ebook} (e-book)`)
+  pricingString = pricingString.trim()
 
-    return (
+  return (
         <div className={styles.bookContainer}>
             <div className={styles.bookImage}>
                 <img src={props.image ?? defaultImage} />
@@ -30,21 +29,20 @@ const BookComponent = props => {
                 ))}
             </div>
         </div>
-    )
+  )
 }
-
 
 /**
  * Default props
  */
 BookComponent.defaultProps = {
-    title: '',
-    description: [],
-    image: null,
-    price: {
-        paperback: undefined,
-        ebook: undefined,
-    },
+  title: '',
+  description: [],
+  image: null,
+  price: {
+    paperback: undefined,
+    ebook: undefined
+  }
 }
 
-export default BookComponent;
+export default BookComponent
