@@ -1,0 +1,13 @@
+name: CI
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        working-directory: ./hoekstraenveldhuis.nl
+        run: yarn install
+      - name: Lint using ESLint
+        working-directory: ./hoekstraenveldhuis.nl
+        run: yarn run eslint .
