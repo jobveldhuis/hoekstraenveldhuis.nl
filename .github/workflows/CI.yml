@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - working-directory: ./hoekstraenveldhuis.nl
       - name: Install modules
-        run: yarn
+        working-directory: ./hoekstraenveldhuis.nl
+        run: yarn install
       - name: Lint using ESLint
+        working-directory: ./hoekstraenveldhuis.nl
         run: yarn run eslint .
