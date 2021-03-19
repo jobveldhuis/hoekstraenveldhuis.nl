@@ -1,0 +1,41 @@
+/**
+ * React
+ */
+import React from 'react'
+
+/**
+ * Styles
+ */
+import styles from '../styles/BookComponent.module.css'
+
+
+
+const BookComponent = props => {
+    let pricingString = '';
+    if (props.price.paperback) pricingString = pricingString.concat(` € ${props.price.paperback} (paperback)`);
+    if (props.price.ebook) pricingString = pricingString.concat(` € ${props.price.ebook} (e-book)`);
+    pricingString = pricingString.trim();
+
+    return (
+        <div className={styles.bookContainer}>
+            <h2>{props.title}</h2>
+            <h3>{pricingString}</h3>
+        </div>
+    )
+}
+
+
+/**
+ * Default props
+ */
+BookComponent.defaultProps = {
+    title: '',
+    description: '',
+    image: null,
+    price: {
+        paperback: undefined,
+        ebook: undefined,
+    },
+}
+
+export default BookComponent;

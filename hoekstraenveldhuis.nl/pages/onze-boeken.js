@@ -1,6 +1,18 @@
+/**
+ * React
+ */
 import React from 'react'
+
+/**
+ * Next
+ */
 import Head from 'next/head'
+
+/**
+ * UI Components
+ */
 import Layout from '../components/Layout'
+import BookComponent from '../components/BookComponent'
 
 export default function Home() {
     return (
@@ -19,7 +31,20 @@ export default function Home() {
             </Head>
 
             <Layout>
-                Onze boeken
+                <BookComponent
+                    title={"Inspecteur Vos"}
+                    price={{
+                        paperback: 15.00,
+                        ebook: 4.95
+                    }}
+                />
+                <BookComponent
+                    title={"De Laatste Dag"}
+                    price={{
+                        paperback: 15.00,
+                        ebook: 4.95
+                    }}
+                />
             </Layout>
         </div>
     )
