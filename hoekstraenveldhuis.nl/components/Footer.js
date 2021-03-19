@@ -10,7 +10,6 @@ import Link from 'next/link'
  */
 import styles from '../styles/Footer.module.css'
 
-
 const Footer = props => (
     <div className={styles.footerComponent}>
         { props.showCTA && (
@@ -30,13 +29,13 @@ const Footer = props => (
                 <div className={styles.footerGrid}>
                     <div>
                         <strong>Hoekstra & Veldhuis B.V.</strong><br />
-                        <a href={"mailto:info@henv.online"}>info@henv.online</a><br />
+                        <a href={'mailto:info@henv.online'}>info@henv.online</a><br />
                         Copyright 2021
                     </div>
                     <div>
                         <strong>Volg ons op</strong><br />
-                        <a href={"https://facebook.com/hoekstraenveldhuis"} rel={"nofollow"}>Facebook</a><br />
-                        <a href={"https://instagram.com/hoekstraenveldhuis"} rel={"nofollow"}>Instagram</a><br />
+                        <a href={'https://facebook.com/hoekstraenveldhuis'} rel={'nofollow'}>Facebook</a><br />
+                        <a href={'https://instagram.com/hoekstraenveldhuis'} rel={'nofollow'}>Instagram</a><br />
                     </div>
                     <div>
                         <strong>Kantoor</strong><br />
@@ -46,7 +45,7 @@ const Footer = props => (
                     <div>
                         KvK 71210229 <br />
                         BTW NL858624205B01 <br />
-                        <a href={"#"}>Algemene Voorwaarden</a>
+                        <a href={'#'}>Algemene Voorwaarden</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +54,7 @@ const Footer = props => (
 )
 
 Footer.defaultProps = {
-    'showCTA': true
+  showCTA: true
 }
 
-export default Footer;
+export default Footer
