@@ -14,9 +14,9 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import BookComponent from '../components/BookComponent'
 
-export default function Home() {
-    return (
-        <div className={"websiteContainer"}>
+export default function Home () {
+  return (
+        <div className={'websiteContainer'}>
             <Head>
                 {/* Website meta data */}
                 {/* TODO: Add OG and schema markup */}
@@ -32,28 +32,28 @@ export default function Home() {
 
             <Layout>
                 <BookComponent
-                    title={"Inspecteur Vos"}
+                    title={'Inspecteur Vos'}
                     price={{
-                        paperback: 15.00,
-                        ebook: 4.95
+                      paperback: 15.00,
+                      ebook: 4.95
                     }}
                 />
                 <BookComponent
-                    title={"De Laatste Dag"}
+                    title={'De Laatste Dag'}
                     description={[
-                        "Op een koude winteravond wordt het levenloze lichaam van pater Abraham Doornbosch bij de Dom in Utrecht gevonden. De striemen in zijn nek laten weinig aan de verbeelding over. Moord. Maar met welke reden? Door wie? En waarom juist hij?",
-                        "Maak kennis met rechercheur Vos, een eigengereide detective met een voorliefde voor complexe koffie en dito moordzaken. Samen met zijn collega's van de Nationale Recherche lukt het hem keer op keer de moordenaar een stap voor te blijven, maar deze zaak komt dichterbij dan gedacht. Lukt het Vos en de zijnen om het hoofd koel te houden wanneer juist de moordenaar hén een stap voor weet te zijn?"
+                      'Op een koude winteravond wordt het levenloze lichaam van pater Abraham Doornbosch bij de Dom in Utrecht gevonden. De striemen in zijn nek laten weinig aan de verbeelding over. Moord. Maar met welke reden? Door wie? En waarom juist hij?',
+                      "Maak kennis met rechercheur Vos, een eigengereide detective met een voorliefde voor complexe koffie en dito moordzaken. Samen met zijn collega's van de Nationale Recherche lukt het hem keer op keer de moordenaar een stap voor te blijven, maar deze zaak komt dichterbij dan gedacht. Lukt het Vos en de zijnen om het hoofd koel te houden wanneer juist de moordenaar hén een stap voor weet te zijn?"
                     ]}
                     links={{
-                        bol: 'https://www.bol.com/nl/p/inspecteur-vos/9200000120774060/',
-                        kobo: 'https://www.kobo.com/nl/nl/ebook/inspecteur-vos'
+                      bol: 'https://www.bol.com/nl/p/inspecteur-vos/9200000120774060/',
+                      kobo: 'https://www.kobo.com/nl/nl/ebook/inspecteur-vos'
                     }}
                     price={{
-                        paperback: 15.00,
-                        ebook: 4.95
+                      paperback: 15.00,
+                      ebook: 4.95
                     }}
                 />
             </Layout>
         </div>
-    )
+  )
 }
