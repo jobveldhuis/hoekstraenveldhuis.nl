@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div>
+    <div className={"websiteContainer"}>
       <Head>
         {/* Website meta data */}
         {/* TODO: Add OG and schema markup */}
