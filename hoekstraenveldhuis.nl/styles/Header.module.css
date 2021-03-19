@@ -1,6 +1,7 @@
 .navigation
 {
-    width: 940px;
+    max-width: 940px;
+    margin: 0 auto;
     align-self: center;
     font-family: "Prata", serif;
     font-size: 14px;
