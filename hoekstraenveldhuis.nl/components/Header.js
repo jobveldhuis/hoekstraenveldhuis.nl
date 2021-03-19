@@ -13,7 +13,7 @@ import styles from '../styles/Header.module.css'
 const Header = props => (
     <div className={styles.navigation}>
         <nav className={`${styles.navbar} navbar-expand-lg d-flex navbar-light`}>
-        <span className={`navbar-brand`}>
+        <span className={'navbar-brand'}>
             <Link href="/">
                 <a><img src="/images/henv_logo.png" className={styles.logo} alt="Logo Hoekstra & Veldhuis"/></a>
             </Link>
@@ -29,16 +29,16 @@ const Header = props => (
                 <ul className={`${styles.nav} navbar-nav justify-content-end flex-grow-1`}>
                     {
                         props.menu?.map((item, index) => {
-                            let classes = `${styles.navLink} nav-item`
-                            if (index === 0) classes.concat(' first')
-                            if (index === props.menu.length - 1) classes.concat(' last')
-                            return (
+                          const classes = `${styles.navLink} nav-item`
+                          if (index === 0) classes.concat(' first')
+                          if (index === props.menu.length - 1) classes.concat(' last')
+                          return (
                                 <li className={classes} key={index}>
                                     <Link href={item.link}>
                                         <a>{item.title}</a>
                                     </Link>
                                 </li>
-                            )
+                          )
                         })
                     }
                 </ul>
@@ -51,7 +51,7 @@ const Header = props => (
  * Default props for header
  */
 Header.defaultProps = {
-    'menu': []
+  menu: []
 }
 
-export default Header;
+export default Header
