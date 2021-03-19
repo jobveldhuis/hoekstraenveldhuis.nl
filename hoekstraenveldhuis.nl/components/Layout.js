@@ -9,11 +9,11 @@ import Footer from './Footer'
 const menu = [
     {
         'title': 'over ons',
-        'link': '/about'
+        'link': '/over-ons'
     },
     {
         'title': 'onze boeken',
-        'link': '/books'
+        'link': '/onze-boeken'
     },
     {
         'title': 'contact opnemen',
@@ -28,8 +28,14 @@ const Layout = props => (
         <div className="content">
             {props.children}
         </div>
-        <Footer />
+        <Footer
+            showCTA={props.showFooterCTA}
+        />
     </div>
 )
+
+Layout.defaultProps = {
+    showFooterCTA: true,
+}
 
 export default Layout;
