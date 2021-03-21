@@ -23,8 +23,8 @@ function MyApp ({ Component, pageProps }) {
 }
 
 MyApp.propTypes = {
-  Component: PropTypes.node.isRequired,
-  pageProps: PropTypes.node
+  Component: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  pageProps: PropTypes.object.isRequired
 }
 
 export default MyApp
