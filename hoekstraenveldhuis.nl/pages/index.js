@@ -18,6 +18,7 @@ import styles from '../styles/Home.module.css'
  */
 import Layout from '../components/Layout'
 import AboutUsComponent from '../components/AboutUsComponent'
+import ProjectOverviewComponent from '../components/ProjectOverviewComponent'
 
 export default function Home () {
   return (
@@ -27,10 +28,12 @@ export default function Home () {
         {/* TODO: Add OG and schema markup */}
         <title>Hoekstra & Veldhuis - Samen vertellen we uw verhaal</title>
         <link rel="icon" type="image/png" href="../favicon.png" />
-        <meta name="description"
-              content="Bij Hoekstra & Veldhuis draait alles om tekst. Of het nu gaat om tekstschrijven, vertalen of SEO optimalisatie. U bent bij ons aan het juiste adres."/>
+        <meta
+            name="description"
+            content="Bij Hoekstra & Veldhuis draait alles om tekst. Of het nu gaat om tekstschrijven, vertalen of SEO optimalisatie. U bent bij ons aan het juiste adres."
+        />
 
-              {/* Custom fonts */}
+        {/* Custom fonts */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
               <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap" rel="stylesheet" />
       </Head>
@@ -38,7 +41,31 @@ export default function Home () {
       <Layout fullWidth={true}>
           <div className={styles.projectOverviewBackground}>
               <div className={styles.elementContainer}>
-                  Test
+                  <ProjectOverviewComponent
+                  title={'Onze werkzaamheden'}
+                  projects={[
+                    {
+                      title: 'Logopediepraktijk Urk',
+                      description: 'Van wollige taal en jargon, naar leesbare taal voor kinderen en volwassenen.',
+                      image: 'images/henv-client-highlight-1.svg'
+                    },
+                    {
+                      title: 'Esthegi',
+                      description: 'Wervende teksten over gevoelige onderwerpen, geoptimaliseerd voor zoekmachines.',
+                      image: 'images/henv-client-highlight-2.svg'
+                    },
+                    {
+                      title: 'TomTom Interim Management',
+                      description: 'Adviezen en bijstand op het gebied van visuele communicatie van kernwaarden.',
+                      image: 'images/henv-client-highlight-3.svg'
+                    },
+                    {
+                      title: 'ISG Arcus',
+                      description: 'Toneelstukken, scripts en auditiemateriaal voor verschillende uitvoeringen.',
+                      image: 'images/henv-client-highlight-4.svg'
+                    }
+                  ]}
+                  />
               </div>
           </div>
           <div className={styles.elementContainer}>

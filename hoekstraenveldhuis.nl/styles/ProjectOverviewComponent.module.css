@@ -1,0 +1,11 @@
+.projectLeft {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-column-gap: 50px;
+}
+
+.projectRight {
+    display: grid;
+    grid-template-columns: 45% auto;
+    grid-column-gap: 50px;
+}
