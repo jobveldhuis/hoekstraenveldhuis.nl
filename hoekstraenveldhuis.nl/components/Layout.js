@@ -32,7 +32,7 @@ const menu = [
 const Layout = props => (
     <div className="layout">
         <Header menu={menu}/>
-        <div className={props.enforceMaxWidth ? 'content' : 'content__full-width'}>
+        <div className={props.fullWidth ? 'content__full-width' : 'content'}>
             {props.children}
         </div>
         <Footer
@@ -43,12 +43,12 @@ const Layout = props => (
 
 Layout.defaultProps = {
   showFooterCTA: true,
-  enforceMaxWidth: true
+  fullWidth: false
 }
 
 Layout.propTypes = {
   showFooterCTA: PropTypes.bool,
-  enforceMaxWidth: PropTypes.bool,
+  fullWidth: PropTypes.bool,
   children: PropTypes.node.isRequired
 }
 
