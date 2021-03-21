@@ -30,7 +30,7 @@ export default function Home () {
               <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap" rel="stylesheet" />
       </Head>
 
-      <Layout>
+      <Layout fullWidth={false}>
 
           <AboutUsComponent
           title={'Wat we doen'}
