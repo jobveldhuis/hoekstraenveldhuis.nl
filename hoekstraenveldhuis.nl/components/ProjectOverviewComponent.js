@@ -19,7 +19,6 @@ const ProjectOverviewComponent = (props) => (
 
         <div className={styles.projectGrid}>
         {props.projects.map((project, index) => {
-          console.log(index)
           return (
                 <React.Fragment key={index}>
                     { index % 2 === 0 && (
