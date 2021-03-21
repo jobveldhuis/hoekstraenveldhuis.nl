@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
+import PeopleComponent from '../components/PeopleComponent'
 
 export default function Home () {
   return (
@@ -19,7 +20,16 @@ export default function Home () {
             </Head>
 
             <Layout>
-                Over Ons
+                <PeopleComponent
+                 name={'Paul Hoekstra'}
+                 description={'Paul behaalde in 2013 zijn Master of Arts aan de Vrije Universiteit te Amsterdam en wist die daarna aan te vullen met een Master of Education. Inmiddels is hij al meer dan tien jaar werkzaam in het middelbaar onderwijs, waar hij gaandeweg een passie voor schrijven ontwikkelde. Tien jaar lang schreef hij onder meer toneelstukken voor de school. Gedurende een paar jaar was hij daarnaast nauw betrokken bij het onderhouden van de sociale media op zijn school.'}
+                 image={'images/paul-hoekstra.jpeg'}
+                />
+                <PeopleComponent
+                    name={'Job Veldhuis'}
+                    description={'Job maakte kennis met sociale media als beheerder van een van de grootste Wie is de Mol-fanaccounts van Nederland. Hij (mede-)beheerde na zijn middelbare schooltijd onder andere de Facebook, Instagram en Twitteraccounts van een theater, een bioscoop en van Luchthaven Schiphol. De afgelopen vijf jaar schreef hij samen met Paul verschillende toneelstukken. Inmiddels werkt hij als Marketing & Communicatiemanager voor EetSmakelijk.'}
+                    image={'images/job-veldhuis.jpeg'}
+                />
             </Layout>
         </div>
   )
