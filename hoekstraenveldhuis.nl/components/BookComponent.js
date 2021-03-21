@@ -37,9 +37,9 @@ const BookComponent = props => {
                           Object.getOwnPropertyNames(props.types)
                             .map((key, index) => {
                               if (index !== 0) {
-                                return <React.Fragment key={index}> en <a href={props.types[key].link ?? '#'}> {key}</a></React.Fragment>
+                                return <React.Fragment key={index}>&nbsp;en<a href={props.types[key].link ?? '#'} className={'underlined'}>&nbsp;{key}</a></React.Fragment>
                               } else {
-                                return <React.Fragment key={index}><a href={props.types[key].link ?? '#'}> {key}</a></React.Fragment>
+                                return <React.Fragment key={index}><a href={props.types[key].link ?? '#'} className={'underlined'}>&nbsp;{key}</a></React.Fragment>
                               }
                             })
                       }

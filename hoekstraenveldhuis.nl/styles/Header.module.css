@@ -93,6 +93,3 @@ ul.nav
 {
     color: #2274a5;
 }
-.nav a::after {
-    background: #2274a5;
-}
