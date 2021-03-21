@@ -1,4 +1,12 @@
+/**
+ * React
+ */
 import React from 'react'
+
+/**
+ * PropTypes
+ */
+import PropTypes from 'prop-types'
 
 /**
  * Components
@@ -35,6 +43,11 @@ const Layout = props => (
 
 Layout.defaultProps = {
   showFooterCTA: true
+}
+
+Layout.propTypes = {
+  showFooterCTA: PropTypes.bool,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout
