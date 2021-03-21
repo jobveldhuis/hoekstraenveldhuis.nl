@@ -21,7 +21,7 @@ const AboutUsComponent = (props) => (
             <div className={styles.servicesMenu}>
                 {props.services.map((service) => (
                     <>
-                        <a href={'#'} className={'underlined'}>
+                        <a href={service.link} className={'underlined'}>
                             <h3>{service.title}</h3>
                         </a><br />
                     </>
