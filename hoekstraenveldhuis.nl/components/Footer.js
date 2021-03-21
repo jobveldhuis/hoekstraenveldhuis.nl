@@ -50,7 +50,7 @@ const Footer = props => (
                     <div>
                         KvK 71210229 <br />
                         BTW NL858624205B01 <br />
-                        <a href={'#'}>Algemene Voorwaarden</a>
+                        <a href='/documents/hoekstra-en-veldhuis-algemene-voorwaarden.pdf' target='_blank'>Algemene Voorwaarden</a>
                     </div>
                 </div>
             </div>
