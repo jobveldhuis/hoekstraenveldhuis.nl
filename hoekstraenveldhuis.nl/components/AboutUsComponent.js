@@ -27,7 +27,7 @@ const AboutUsComponent = (props) => (
                     </>
                 ))}
             </div>
-            <div className={styles.servicesDescription}>
+            <div>
                 {props.description.map((paragraph) => (
                     <p>{paragraph}</p>
                 ))}
