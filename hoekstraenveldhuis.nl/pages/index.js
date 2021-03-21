@@ -9,6 +9,11 @@ import React from 'react'
 import Head from 'next/head'
 
 /**
+ * Styles
+ */
+import styles from '../styles/Home.module.css'
+
+/**
  * UI Components
  */
 import Layout from '../components/Layout'
@@ -30,37 +35,43 @@ export default function Home () {
               <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap" rel="stylesheet" />
       </Head>
 
-      <Layout fullWidth={false}>
-
-          <AboutUsComponent
-          title={'Wat we doen'}
-          services={[
-            {
-              title: 'Tekstschrijven',
-              link: '/onze-diensten/tekstschrijven'
-            },
-            {
-              title: 'Zoekmachineoptimalisatie',
-              link: '/onze-diensten/zoekmachineoptimalisatie'
-            },
-            {
-              title: 'Vertalingen',
-              link: '/onze-diensten/vertalingen'
-            },
-            {
-              title: 'Communicatieadvies',
-              link: '/onze-diensten/communicatieadvies'
-            },
-            {
-              title: 'Tekstcontrole',
-              link: '/onze-diensten/tekstcontrole'
-            }
-          ]}
-          description={[
-            'We helpen met het vinden van de juiste woorden voor uw verhaal. Of het gaat om een vacaturetekst of een vertaling van een boek: bij Hoekstra & Veldhuis bent u aan het juiste adres.',
-            'We geloven in persoonlijke aandacht. Wanneer u daar prijs op stelt, denken we graag met u mee. Neem vandaag nog contact op voor een vrijblijvend adviesgesprek.'
-          ]}
-          />
+      <Layout fullWidth={true}>
+          <div className={styles.projectOverviewBackground}>
+              <div className={styles.elementContainer}>
+                  Test
+              </div>
+          </div>
+          <div className={styles.elementContainer}>
+              <AboutUsComponent
+                  title={'Wat we doen'}
+                  services={[
+                    {
+                      title: 'Tekstschrijven',
+                      link: '/onze-diensten/tekstschrijven'
+                    },
+                    {
+                      title: 'Zoekmachineoptimalisatie',
+                      link: '/onze-diensten/zoekmachineoptimalisatie'
+                    },
+                    {
+                      title: 'Vertalingen',
+                      link: '/onze-diensten/vertalingen'
+                    },
+                    {
+                      title: 'Communicatieadvies',
+                      link: '/onze-diensten/communicatieadvies'
+                    },
+                    {
+                      title: 'Tekstcontrole',
+                      link: '/onze-diensten/tekstcontrole'
+                    }
+                  ]}
+                  description={[
+                    'We helpen met het vinden van de juiste woorden voor uw verhaal. Of het gaat om een vacaturetekst of een vertaling van een boek: bij Hoekstra & Veldhuis bent u aan het juiste adres.',
+                    'We geloven in persoonlijke aandacht. Wanneer u daar prijs op stelt, denken we graag met u mee. Neem vandaag nog contact op voor een vrijblijvend adviesgesprek.'
+                  ]}
+              />
+          </div>
       </Layout>
     </div>
   )
