@@ -43,7 +43,7 @@ AboutUsComponent.defaultProps = {
 }
 
 AboutUsComponent.propTypes = {
-  title: PropTypes.bool,
+  title: PropTypes.string,
   services: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     link: PropTypes.string
