@@ -63,7 +63,7 @@ Footer.defaultProps = {
 }
 
 Footer.propTypes = {
-  showCTA: PropTypes.boolean
+  showCTA: PropTypes.bool
 }
 
 export default Footer
