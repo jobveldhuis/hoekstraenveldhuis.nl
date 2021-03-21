@@ -50,23 +50,10 @@
     font-weight: 400;
 }
 
-a.underlined {
-    display: inline-block;
-}
-
-a.underlined::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 1px;
-    background: #ffffff;
-    transition: width .3s;
-}
-
 a.underlined:hover {
     color: #ffffff;
 }
 
-a.underlined:hover::after {
-    width: 100%;
+a.underlined::after {
+    background: #ffffff;
 }

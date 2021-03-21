@@ -34,13 +34,13 @@ const Footer = props => (
                 <div className={styles.footerGrid}>
                     <div>
                         <strong>Hoekstra & Veldhuis B.V.</strong><br />
-                        <a className={styles.underlined} href={'mailto:info@henv.online'}>info@henv.online</a><br />
+                        <a className={`${styles.underlined} underlined`} href={'mailto:info@henv.online'}>info@henv.online</a><br />
                         Copyright 2021
                     </div>
                     <div>
                         <strong>Volg ons op</strong><br />
-                        <a className={styles.underlined} href={'https://facebook.com/hoekstraenveldhuis'} rel={'nofollow'}>Facebook</a><br />
-                        <a className={styles.underlined} href={'https://instagram.com/hoekstraenveldhuis'} rel={'nofollow'}>Instagram</a><br />
+                        <a className={`${styles.underlined} underlined`} href={'https://facebook.com/hoekstraenveldhuis'} rel={'nofollow'}>Facebook</a><br />
+                        <a className={`${styles.underlined} underlined`} href={'https://instagram.com/hoekstraenveldhuis'} rel={'nofollow'}>Instagram</a><br />
                     </div>
                     <div>
                         <strong>Kantoor</strong><br />
@@ -50,7 +50,7 @@ const Footer = props => (
                     <div>
                         KvK 71210229 <br />
                         BTW NL858624205B01 <br />
-                        <a className={styles.underlined} href='/documents/hoekstra-en-veldhuis-algemene-voorwaarden.pdf' target='_blank'>Algemene Voorwaarden</a>
+                        <a className={`${styles.underlined} underlined`} href='/documents/hoekstra-en-veldhuis-algemene-voorwaarden.pdf' target='_blank'>Algemene Voorwaarden</a>
                     </div>
                 </div>
             </div>

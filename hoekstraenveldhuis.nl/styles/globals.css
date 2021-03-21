@@ -64,3 +64,18 @@ a:hover {
   text-decoration: none;
 }
 
+a.underlined {
+  display: inline-block;
+}
+
+a.underlined::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+}
+
+a.underlined:hover::after {
+  width: 100%;
+}
