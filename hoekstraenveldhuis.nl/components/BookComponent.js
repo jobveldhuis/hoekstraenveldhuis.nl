@@ -13,25 +13,40 @@ import PropTypes from 'prop-types'
  */
 import styles from '../styles/BookComponent.module.css'
 
-const defaultImage = '/images/omslag-inspecteur-vos.png'
-
 const BookComponent = props => {
-  let pricingString = ''
-  if (props.price.paperback) pricingString = pricingString.concat(`€ ${props.price.paperback} (paperback)`)
-  if (props.price.ebook) pricingString = pricingString.concat(` € ${props.price.ebook} (e-book)`)
-  pricingString = pricingString.trim()
-
   return (
         <div className={styles.bookContainer}>
-            <div className={styles.bookImage}>
-                <img src={props.image ?? defaultImage} />
+            <div>
+                { props.image && (
+                    <>
+                        <img src={props.image} />
+                        <br />
+                    </>
+                )}
             </div>
+
             <div className={styles.bookInfo}>
                 <h2>{props.title}</h2>
-                <h3>{pricingString}</h3>
                 {props.description.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
+              {props.types && (
+                  <>
+                      <p>Nu beschikbaar als
+                      {
+                          Object.getOwnPropertyNames(props.types)
+                            .map((key, index) => {
+                              if (index !== 0) {
+                                return <React.Fragment key={index}> en <a href={props.types[key].link ?? '#'}> {key}</a></React.Fragment>
+                              } else {
+                                return <React.Fragment key={index}><a href={props.types[key].link ?? '#'}> {key}</a></React.Fragment>
+                              }
+                            })
+                      }
+                      .
+                      </p>
+                  </>
+              )}
             </div>
         </div>
   )
@@ -44,20 +59,18 @@ BookComponent.defaultProps = {
   title: '',
   description: [],
   image: null,
-  price: {
-    paperback: undefined,
-    ebook: undefined
-  }
+  types: undefined
 }
 
 BookComponent.propTypes = {
   title: PropTypes.string,
   description: PropTypes.arrayOf(PropTypes.string),
   image: PropTypes.string,
-  price: PropTypes.shape({
-    paperback: PropTypes.number,
-    ebook: PropTypes.number
-  })
+  types: PropTypes.objectOf(
+    PropTypes.shape({
+      link: PropTypes.string,
+      price: PropTypes.number
+    }))
 }
 
 export default BookComponent
