@@ -7,20 +7,9 @@
 }
 
 .bookContainer img {
-    max-width: 90%;
-    filter: grayscale(80%);
-    -webkit-filter: grayscale(80%);
-    transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
+    max-width: 100%;
 }
 
 .bookContainer h2 {
     font-size: 28px;
-}
-
-.bookContainer h3 {
-    font-size: 20px;
-    font-family: "Lato", sans-serif;
-    font-weight: 300;
-    color: #676767;
 }
