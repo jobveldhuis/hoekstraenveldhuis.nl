@@ -6,6 +6,11 @@ import React from 'react'
 import Link from 'next/link'
 
 /**
+ * PropTypes
+ */
+import PropTypes from 'prop-types'
+
+/**
  * Styles
  */
 import styles from '../styles/Footer.module.css'
@@ -55,6 +60,10 @@ const Footer = props => (
 
 Footer.defaultProps = {
   showCTA: true
+}
+
+Footer.propTypes = {
+  showCTA: PropTypes.boolean
 }
 
 export default Footer
