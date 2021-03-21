@@ -37,12 +37,12 @@ const Header = props => {
                     <ul className={`${styles.nav} navbar-nav justify-content-end flex-grow-1`}>
                         {
                             props.menu?.map((item, index) => {
-                              let classes = `${styles.navLink} nav-item`
+                              let classes = `${styles.navLink} nav-item underlined`
                               if (item.link === router.pathname) classes = `${styles.navLink} ${styles.current} nav-item`
                               return (
                                     <li className={classes} key={index}>
                                         <Link href={item.link}>
-                                            <a>{item.title}</a>
+                                            <a className='underlined'>{item.title}</a>
                                         </Link>
                                     </li>
                               )

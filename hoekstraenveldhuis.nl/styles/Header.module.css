@@ -60,7 +60,7 @@ nav.navbar
 {
     border: none;
     border-radius: 0;
-    outline: none !important;
+    outline: none;
     padding: 15px;
 }
 
@@ -78,8 +78,7 @@ ul.nav
 }
 .navLink
 {
-    padding: 0 1.5rem !important;
-    line-height: 50px;
+    padding: 0 1.5rem;
 }
 .navLink.current a
 {
@@ -92,5 +91,8 @@ ul.nav
 }
 .nav a:hover
 {
-    color: #2274a5 !important;
+    color: #2274a5;
+}
+.nav a::after {
+    background: #2274a5;
 }
