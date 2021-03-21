@@ -6,6 +6,11 @@ import React from 'react'
 import Link from 'next/link'
 
 /**
+ * PropTypes
+ */
+import PropTypes from 'prop-types'
+
+/**
  * Styles
  */
 import styles from '../styles/Header.module.css'
@@ -52,6 +57,13 @@ const Header = props => (
  */
 Header.defaultProps = {
   menu: []
+}
+
+Header.propTypes = {
+  menu: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    link: PropTypes.string
+  }))
 }
 
 export default Header
