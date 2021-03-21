@@ -19,17 +19,17 @@ const AboutUsComponent = (props) => (
 
         <div className={styles.aboutUsGrid}>
             <div className={styles.servicesMenu}>
-                {props.services.map((service) => (
-                    <>
+                {props.services.map((service, index) => (
+                    <React.Fragment key={index}>
                         <a href={service.link} className={'underlined'}>
                             <h3>{service.title}</h3>
                         </a><br />
-                    </>
+                    </React.Fragment>
                 ))}
             </div>
             <div>
-                {props.description.map((paragraph) => (
-                    <p>{paragraph}</p>
+                {props.description.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
                 ))}
             </div>
         </div>
