@@ -4,6 +4,11 @@
 import React from 'react'
 
 /**
+ * PropTypes
+ */
+import PropTypes from 'prop-types'
+
+/**
  * Styles
  */
 import styles from '../styles/BookComponent.module.css'
@@ -24,8 +29,8 @@ const BookComponent = props => {
             <div className={styles.bookInfo}>
                 <h2>{props.title}</h2>
                 <h3>{pricingString}</h3>
-                {props.description.map((paragraph) => (
-                    <p>{paragraph}</p>
+                {props.description.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
                 ))}
             </div>
         </div>
@@ -43,6 +48,16 @@ BookComponent.defaultProps = {
     paperback: undefined,
     ebook: undefined
   }
+}
+
+BookComponent.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.arrayOf(PropTypes.string),
+  image: PropTypes.string,
+  price: PropTypes.shape({
+    paperback: PropTypes.number,
+    ebook: PropTypes.number
+  })
 }
 
 export default BookComponent
