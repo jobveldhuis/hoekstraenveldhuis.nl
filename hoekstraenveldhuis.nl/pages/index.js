@@ -1,5 +1,16 @@
+/**
+ * React
+ */
 import React from 'react'
+
+/**
+ * Next
+ */
 import Head from 'next/head'
+
+/**
+ * UI Components
+ */
 import Layout from '../components/Layout'
 
 export default function Home () {
