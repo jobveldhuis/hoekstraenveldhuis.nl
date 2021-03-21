@@ -13,45 +13,41 @@ import PropTypes from 'prop-types'
  */
 import styles from '../styles/ProjectOverviewComponent.module.css'
 
-function showProject (isLeft, project) {
-  return isLeft
-    ? (
-        <>
-            <div>
-                <span>{project.title}</span>
-                <h3>{project.description}</h3>
-            </div>
-            <div>
-                <img src={project.image}/>
-            </div>
-        </>
-      )
-    : (
-        <>
-            <div>
-                <img src={project.image}/>
-            </div>
-            <div>
-                <span>{project.title}</span>
-                <h3>{project.description}</h3>
-            </div>
-        </>
-
-      )
-}
-
 const ProjectOverviewComponent = (props) => (
     <div className={styles.projectOverviewContainer}>
         <h2>{props.title}</h2>
 
+        <div className={styles.projectGrid}>
         {props.projects.map((project, index) => {
-          const isLeft = index % 2 === 0
+          console.log(index)
           return (
-                <div key={index} className={isLeft ? styles.projectLeft : styles.projectRight}>
-                    {showProject(isLeft, project)}
-                </div>
+                <React.Fragment key={index}>
+                    { index % 2 === 0 && (
+                    <>
+                        <div>
+                            <span className={styles.projectTitle}>{project.title}</span>
+                            <h3 className={styles.projectDescription}>{project.description}</h3>
+                        </div>
+                        <div>
+                            <img src={project.image}/>
+                        </div>
+                    </>
+                    )}
+                    { !(index % 2 === 0) && (
+                        <>
+                            <div>
+                                <img src={project.image}/>
+                            </div>
+                            <div>
+                                <span className={styles.projectTitle}>{project.title}</span>
+                                <h3 className={styles.projectDescription}>{project.description}</h3>
+                            </div>
+                        </>
+                    )}
+                </React.Fragment>
           )
         })}
+        </div>
     </div>
 )
 
