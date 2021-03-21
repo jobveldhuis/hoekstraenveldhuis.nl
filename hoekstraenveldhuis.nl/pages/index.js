@@ -12,6 +12,7 @@ import Head from 'next/head'
  * UI Components
  */
 import Layout from '../components/Layout'
+import AboutUsComponent from '../components/AboutUsComponent'
 
 export default function Home () {
   return (
@@ -30,7 +31,36 @@ export default function Home () {
       </Head>
 
       <Layout>
-          Test
+
+          <AboutUsComponent
+          title={'Wat we doen'}
+          services={[
+            {
+              title: 'Tekstschrijven',
+              link: '/onze-diensten/tekstschrijven'
+            },
+            {
+              title: 'Zoekmachineoptimalisatie',
+              link: '/onze-diensten/zoekmachineoptimalisatie'
+            },
+            {
+              title: 'Vertalingen',
+              link: '/onze-diensten/vertalingen'
+            },
+            {
+              title: 'Communicatieadvies',
+              link: '/onze-diensten/communicatieadvies'
+            },
+            {
+              title: 'Tekstcontrole',
+              link: '/onze-diensten/tekstcontrole'
+            }
+          ]}
+          description={[
+            'We helpen met het vinden van de juiste woorden voor uw verhaal. Of het gaat om een vacaturetekst of een vertaling van een boek: bij Hoekstra & Veldhuis bent u aan het juiste adres.',
+            'We geloven in persoonlijke aandacht. Wanneer u daar prijs op stelt, denken we graag met u mee. Neem vandaag nog contact op voor een vrijblijvend adviesgesprek.'
+          ]}
+          />
       </Layout>
     </div>
   )
