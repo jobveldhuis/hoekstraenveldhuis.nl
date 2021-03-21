@@ -41,6 +41,12 @@ a {
   flex-grow: 1;
 }
 
+.content__full-width {
+  width: 100%;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Prata", serif;
   font-weight: 500;
