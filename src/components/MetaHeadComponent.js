@@ -25,7 +25,7 @@ const Meta = (props) => {
 
                 {/* Custom fonts */}
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&family=Shadows+Into+Light&display=swap" rel="stylesheet" />
 
                 {/* Open Graph */}
                 <meta property='og:title' content={props.pageTitle ? props.pageTitle : `${props.pageName} ${props.separator} ${props.websiteTitle}`} />
