@@ -14,6 +14,7 @@ export default function CopyWriting () {
             heading='Tekstschrijven: een vak apart.'
             pageName='Tekstschrijven'
             description='Een professionele tekst, gericht op uw doel, met oog voor uw doelgroep. Daar zijn we in gespecialiseerd.'
+            showContactBadge={false}
         >
             <p style={{ fontWeight: 'bolder' }}>
                 De juiste toon, de juiste woorden en de juiste boodschap. Iedereen die ooit begonnen is aan het schrijven van een tekst kent het gevoel van machteloosheid wanneer de puzzelstukjes net niet op hun plek vallen. Om deze frustratie te voorkomen en om ervoor te zorgen dat al uw teksten helemaal in orde zijn, kunt u ervoor kiezen om een professionele tekstschrijver in te huren.

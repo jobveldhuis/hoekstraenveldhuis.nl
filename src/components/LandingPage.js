@@ -33,10 +33,16 @@ const LandingPage = (props) => (
                 <h1>{props.heading}</h1>
                 {props.children}
             </div>
-            <ContactBadgeComponent />
+            { props.showContactBadge && (
+                <ContactBadgeComponent />
+            )}
         </Layout>
     </Meta>
 )
+
+LandingPage.defaultProps = {
+  showContactBadge: true
+}
 
 LandingPage.propTypes = {
   heading: PropTypes.string,
@@ -48,6 +54,7 @@ LandingPage.propTypes = {
     image: PropTypes.string
   }),
   schema: PropTypes.shape({}),
+  showContactBadge: PropTypes.bool,
   children: PropTypes.node.isRequired
 }
 
