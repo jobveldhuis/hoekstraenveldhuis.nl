@@ -11,5 +11,10 @@
 .aboutContainer {
     max-width: 940px;
     margin: 0 auto;
+}
 
+.scrollDownContainer {
+    max-width: 940px;
+    height: 70vh;
+    margin: 0 auto;
 }

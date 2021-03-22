@@ -19,6 +19,7 @@ import styles from '../styles/Home.module.css'
 import Layout from '../components/Layout'
 import AboutUsComponent from '../components/AboutUsComponent'
 import ProjectOverviewComponent from '../components/ProjectOverviewComponent'
+import ScrollDownComponent from '../components/ScrollDownComponent'
 
 export default function Home () {
   return (
@@ -39,7 +40,14 @@ export default function Home () {
       </Head>
 
       <Layout fullWidth={true}>
-          <div className={styles.projectOverviewBackground}>
+          <div className={styles.scrollDownContainer}>
+              <ScrollDownComponent
+                  title='Wij zijn Hoekstra & Veldhuis'
+                  description='Een tekstbureau waar het nog écht draait om tekst. Waar de woorden centraal staan en waar we iedere dag samenwerken aan het schrijven van teksten die inspireren, imponeren en motiveren. Samen vertellen we uw verhaal.'
+              anchor='scrollDownAnchor'
+              />
+          </div>
+          <div className={styles.projectOverviewBackground} id='scrollDownAnchor'>
               <div className={styles.elementContainer}>
                   <ProjectOverviewComponent
                   title={'Onze werkzaamheden'}
