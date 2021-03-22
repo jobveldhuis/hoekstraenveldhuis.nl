@@ -14,7 +14,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import PeopleComponent from '../components/PeopleComponent'
 
-export default function Home () {
+export default function AboutUs () {
   return (
         <div className={'websiteContainer'}>
             <Head>

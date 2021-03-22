@@ -14,7 +14,7 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import BookComponent from '../components/BookComponent'
 
-export default function Home () {
+export default function OurBooks () {
   return (
         <div className={'websiteContainer'}>
             <Head>

@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
 
-export default function Home () {
+export default function Contact () {
   return (
         <div className={'websiteContainer'}>
             <Head>
