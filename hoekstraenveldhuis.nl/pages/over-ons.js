@@ -1,5 +1,16 @@
+/**
+ * React
+ */
 import React from 'react'
+
+/**
+ * Next
+ */
 import Head from 'next/head'
+
+/**
+ * UI Components
+ */
 import Layout from '../components/Layout'
 import PeopleComponent from '../components/PeopleComponent'
 
@@ -27,7 +38,7 @@ export default function Home () {
                 />
                 <PeopleComponent
                     name={'Job Veldhuis'}
-                    description={'Job maakte kennis met sociale media als beheerder van een van de grootste Wie is de Mol-fanaccounts van Nederland. Hij (mede-)beheerde na zijn middelbare schooltijd onder andere de Facebook, Instagram en Twitteraccounts van een theater, een bioscoop en van Luchthaven Schiphol. De afgelopen vijf jaar schreef hij samen met Paul verschillende toneelstukken. Inmiddels werkt hij als Marketing & Communicatiemanager voor EetSmakelijk.'}
+                    description={'Job maakte kennis met sociale media als beheerder van een van de grootste Wie is de Mol-fanaccounts van Nederland. Hij werkte later aan de sociale media van het lokale theater, een bioscoop en Luchthaven Schiphol. Inmiddels werkt hij al drie jaar als marketingconsultant voor Sluijmer Multimedia en als marketing- & communicatiemanager voor EetSmakelijk.nl. De afgelopen vijf jaar schreef hij samen met Paul verschillende toneelstukken en boeken.'}
                     image={'images/job-veldhuis.jpg'}
                 />
             </Layout>
