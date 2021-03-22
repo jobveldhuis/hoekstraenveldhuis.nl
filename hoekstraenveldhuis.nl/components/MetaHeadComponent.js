@@ -4,6 +4,11 @@
 import React from 'react'
 
 /**
+ * PropTypes
+ */
+import PropTypes from 'prop-types'
+
+/**
  * Next
  */
 import Head from 'next/head'
@@ -52,6 +57,18 @@ Meta.defaultProps = {
   }
 }
 
-Meta.propTypes = {}
+Meta.propTypes = {
+  pageTitle: PropTypes.string,
+  pageName: PropTypes.string,
+  websiteTitle: PropTypes.string,
+  separator: PropTypes.string,
+  description: PropTypes.string,
+  openGraph: PropTypes.shape({
+    type: PropTypes.string,
+    image: PropTypes.string
+  }),
+  schema: PropTypes.shape({}),
+  children: PropTypes.node.isRequired
+}
 
 export default Meta
