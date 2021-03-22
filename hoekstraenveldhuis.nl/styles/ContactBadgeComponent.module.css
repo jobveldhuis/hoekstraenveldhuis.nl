@@ -1,0 +1,10 @@
+.contactBadgeComponentContainer {
+    position: fixed;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    margin: 0 50px 25px 0;
+}
