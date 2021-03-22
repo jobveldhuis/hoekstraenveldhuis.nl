@@ -28,7 +28,7 @@ export default function Home () {
                 <PeopleComponent
                     name={'Job Veldhuis'}
                     description={'Job maakte kennis met sociale media als beheerder van een van de grootste Wie is de Mol-fanaccounts van Nederland. Hij (mede-)beheerde na zijn middelbare schooltijd onder andere de Facebook, Instagram en Twitteraccounts van een theater, een bioscoop en van Luchthaven Schiphol. De afgelopen vijf jaar schreef hij samen met Paul verschillende toneelstukken. Inmiddels werkt hij als Marketing & Communicatiemanager voor EetSmakelijk.'}
-                    image={'images/job-veldhuis.jpeg'}
+                    image={'images/job-veldhuis.jpg'}
                 />
             </Layout>
         </div>
