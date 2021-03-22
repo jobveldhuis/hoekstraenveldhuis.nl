@@ -21,7 +21,7 @@ export default function SEO () {
 
             <h2>Waarom tijd investeren in SEO?</h2>
             <p>
-                Een eenvoudige manier om zoveel mogelijk verkeer naar uw website te leiden, is door middel van zoekmachines. Deze brengen namelijk gericht verkeer voor bepaalde zoekwoorden naar uw website zonder dat u daarvoor hoeft te betalen. Stel dat u een eigen handel heeft in kattensnoepjes. Als uw website geoptimaliseerd is, dan kunnen mensen u vinden wanneer ze zoeken op bijvoorbeeld "kattensnoepjes kopen" of "de lekkerste kattensnoepjes". Zo krijgt u verkeer binnen, wat gericht op zoek is naar de producten die u verkoopt.
+                Een eenvoudige manier om zoveel mogelijk verkeer naar uw website te leiden, is door middel van zoekmachines. Deze brengen namelijk gericht verkeer voor bepaalde zoekwoorden naar uw website zonder dat u daarvoor hoeft te betalen. Stel dat u een eigen handel heeft in kattensnoepjes. Als uw website geoptimaliseerd is, dan kunnen mensen u vinden wanneer ze zoeken op bijvoorbeeld &lsquo;kattensnoepjes kopen&rsquo; of &lsquo;de lekkerste kattensnoepjes&rsquo;. Zo krijgt u verkeer binnen, wat gericht op zoek is naar de producten die u verkoopt.
             </p>
             <p>
                 Helaas leert onderzoek ons dat de gemiddelde Google-gebruiker lui is. Minder dan 10% bezoekt bijvoorbeeld de tweede pagina zoekresultaten. Als het niet op de eerste pagina te vinden is, dan zal het er wel helemaal niet zijn. Zo lijkt de gedachte van de gebruiker. Hoe hoger uw pagina dus staat op Google, hoe groter de kans is dat deze gevonden wordt door uw klanten.
