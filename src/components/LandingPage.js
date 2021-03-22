@@ -29,7 +29,8 @@ const LandingPage = (props) => (
         schema={props.schema}
     >
         <Layout>
-            <div className={styles.SeoPageContainer}>
+            <div className={styles.landingPageContainer}>
+                <h1>{props.heading}</h1>
                 {props.children}
             </div>
             <ContactBadgeComponent />
@@ -38,6 +39,7 @@ const LandingPage = (props) => (
 )
 
 LandingPage.propTypes = {
+  heading: PropTypes.string,
   pageTitle: PropTypes.string,
   pageName: PropTypes.string,
   description: PropTypes.string,
