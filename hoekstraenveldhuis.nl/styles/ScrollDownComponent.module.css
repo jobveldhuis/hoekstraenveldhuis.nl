@@ -1,0 +1,24 @@
+.scrollDownContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollDownContainer h1, .scrollDownContainer h2 {
+    font-size: 38px;
+}
+
+.scrollDownContainer p {
+    margin-bottom: 0;
+}
+
+.scrollDownContent {
+    max-width: 70%;
+}
+
+.scrollDownAnimationContainer {
+    max-width: 60px;
+    margin-left: -7px;
+}
