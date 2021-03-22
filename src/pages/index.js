@@ -29,7 +29,7 @@ export default function Home () {
     },
     {
       title: 'Vertalingen',
-      link: '/onze-diensten/vertalingen'
+      link: '/onze-diensten/vertalen'
     },
     {
       title: 'Communicatieadvies',
