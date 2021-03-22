@@ -12,8 +12,8 @@ export default function SEO () {
   return (
         <LandingPage
             heading='Zoekmachine optimalisatie door specialisten'
-        pageName='SEO, Zoekmachineoptimalisatie'
-        description='Zorg ervoor dat uw website goed vindbaar is en kies voor teksten die gericht zijn op goede vindbaarheid in zoekmachines.'
+            pageName='SEO, Zoekmachineoptimalisatie'
+            description='Zorg ervoor dat uw website goed vindbaar is en kies voor teksten die gericht zijn op goede vindbaarheid in zoekmachines.'
         >
             <p style={{ fontWeight: 'bolder' }}>
                 Misschien heeft u al een website gevuld met teksten waar u trots op bent. Teksten die precies omschrijven waar u voor staat, wat u verkoopt en hoe men u kan bereiken. Als u al helemaal tevreden bent met de teksten op uw website, maar ze leveren nog geen verbeterde prestaties of conversie op, dan kunnen we u helpen de bestaande teksten te verbeteren. Het optimaliseren van uw teksten voor zoekmachines wordt door marketeers SEO, Search Engine Optimization, genoemd.
