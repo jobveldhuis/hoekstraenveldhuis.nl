@@ -1,4 +1,5 @@
 .contactBadgeComponentContainer {
+    z-index: 1;
     position: fixed;
     left: auto;
     top: auto;
@@ -7,4 +8,35 @@
     width: 200px;
     height: 200px;
     margin: 0 50px 25px 0;
+}
+
+.badgeContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.badgeArrow {
+    position: absolute;
+    right: 30px;
+    bottom: 90px;
+    width: 82px;
+    -webkit-transform: rotate(80deg);
+    -ms-transform: rotate(80deg);
+    -moz-transform: rotate(80deg);
+    transform: rotate(80deg);
+}
+
+.badgeText {
+    position: absolute;
+    right: -20px;
+    bottom: 145px;
+    font-size: 18px;
+    font-family: 'Shadows Into Light', sans-serif;
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
 }
