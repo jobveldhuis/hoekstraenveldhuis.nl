@@ -7,6 +7,11 @@ import React from 'react'
  * UI Components
  */
 
+/**
+ * EmailJS
+ */
+import emailjs from 'emailjs-com'
+
 class ContactForm extends React.Component {
   constructor (props) {
     super(props)
@@ -16,9 +21,16 @@ class ContactForm extends React.Component {
     }
   }
 
+  _sendMail (event) {
+    event.preventDefault()
+    emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, event.target, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
+      .then(() => console.log('Done'))
+      .catch((e) => console.log(e))
+  }
+
   render () {
     return (
-      <form>
+      <form onSubmit={this._sendMail}>
           <div className="form-group">
               <label>Uw naam</label>
               <input type="text" className="form-control" name="user_name" />
