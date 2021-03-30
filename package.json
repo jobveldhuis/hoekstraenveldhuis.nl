@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cd src && next dev",
-    "build": "cd src && next build",
-    "start": "cd src && next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "yarn run eslint src"
   },
   "dependencies": {
