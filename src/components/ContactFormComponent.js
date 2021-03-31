@@ -96,7 +96,7 @@ class ContactForm extends React.Component {
         break
       }
       case 'privacyCheck': {
-        const isValid = value === 'on'
+        const isValid = value
         this.setState((prevState) => (
           {
             valid: {
@@ -128,9 +128,8 @@ class ContactForm extends React.Component {
 
   _sendMail (event) {
     event.preventDefault()
-    this._validateInput()
 
-    if (this._validateInput()) {
+    if (this.state.valid.form) {
       emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, event.target, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
         .then(() => console.log('Done'))
         .catch((e) => console.log(e))
