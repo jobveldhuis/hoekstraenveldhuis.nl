@@ -134,6 +134,8 @@ class ContactForm extends React.Component {
       emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, event.target, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
         .then(() => console.log('Done'))
         .catch((e) => console.log(e))
+    } else {
+
     }
   }
 
@@ -157,7 +159,7 @@ class ContactForm extends React.Component {
                     <input className='form-check-input' name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
                     <span className='form-check-label'>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</span>
                 </div>
-                <button type="submit" className="btn btn-outline-primary" disabled={!this.state.valid.form}>Bericht verzenden</button>
+                <button type="submit" disabled={!this.state.valid.form}>Bericht verzenden</button>
             </form>
         </>
     )
