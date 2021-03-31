@@ -132,7 +132,29 @@ class ContactForm extends React.Component {
 
     if (this.state.valid.form) {
       emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, event.target, process.env.NEXT_PUBLIC_EMAILJS_USER_ID)
-        .then(() => console.log('Done'))
+        .then(() => {
+          this.setState((prevState) => ({
+            input: {
+              user_name: prevState.input.user_name,
+              user_email: prevState.input.user_email,
+              message: '',
+              privacyCheck: false
+            },
+            valid: {
+              user_name: true,
+              user_email: true,
+              message: false,
+              privacyCheck: false,
+              form: false
+            },
+            errors: {
+              user_name: null,
+              user_email: null,
+              message: null,
+              privacyCheck: null
+            }
+          }))
+        })
         .catch((e) => console.log(e))
     }
   }
