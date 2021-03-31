@@ -96,20 +96,19 @@ class ContactForm extends React.Component {
         break
       }
       case 'privacyCheck': {
-        const isValid = value
         this.setState((prevState) => (
           {
             valid: {
               ...prevState.valid,
-              privacyCheck: isValid,
-              form: isValid && prevState.valid.user_name && prevState.valid.user_email && prevState.valid.message
+              privacyCheck: value,
+              form: value && prevState.valid.user_name && prevState.valid.user_email && prevState.valid.message
             },
             errors: {
               ...prevState.errors,
               privacyCheck: value ? null : 'Vergeet niet akkoord te gaan met onze privacyvoorwaarden.'
             }
           }
-        ), () => { console.log(this.state) })
+        ))
         break
       }
       default:
@@ -118,12 +117,13 @@ class ContactForm extends React.Component {
   }
 
   _handleChange (event) {
+    const value = event.target.name === 'privacyCheck' ? event.target.checked : event.target.value
     this.setState({
       input: {
         ...this.state.input,
-        [event.target.name]: event.target.value
+        [event.target.name]: value
       }
-    }, () => this._validateInput(event.target.name, event.target.value))
+    }, () => this._validateInput(event.target.name, value))
   }
 
   _sendMail (event) {
@@ -153,7 +153,7 @@ class ContactForm extends React.Component {
                     <textarea className="form-control" name="message" placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking." value={this.state.input.message} onChange={this._handleChange}/>
                 </div>
                 <div className="form-check">
-                    <input className='form-check-input' name="privacyCheck" type="checkbox" checked={this.state.input.privacyChecked} onChange={this._handleChange}/>
+                    <input className='form-check-input' name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
                     <span className='form-check-label'>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</span>
                 </div>
                 <button type="submit" className="btn btn-outline-primary" disabled={!this.state.valid.form}>Bericht verzenden</button>
