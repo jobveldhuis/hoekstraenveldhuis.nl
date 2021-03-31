@@ -4,8 +4,9 @@
 import React from 'react'
 
 /**
- * UI Components
+ * Styling
  */
+import styles from '../styles/ContactFormComponent.module.css'
 
 /**
  * EmailJS
@@ -139,20 +140,20 @@ class ContactForm extends React.Component {
   render () {
     return (
         <>
-            <form onSubmit={this._sendMail}>
-                <div className="form-group">
+            <form onSubmit={this._sendMail} className={styles.contactForm}>
+                <div className={`form-group ${styles.group}`}>
                     <label>Uw naam</label>
                     <input type="text" className="form-control" name="user_name" value={this.state.input.name} onChange={this._handleChange}/>
                 </div>
-                <div className="form-group">
+                <div className={`form-group ${styles.group}`}>
                     <label>Uw emailadres</label>
                     <input type="email" className="form-control" name="user_email" value={this.state.input.email} onChange={this._handleChange}/>
                 </div>
-                <div className="form-group">
+                <div className={`form-group ${styles.group}`}>
                     <label>Uw bericht</label>
                     <textarea className="form-control" name="message" placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking." value={this.state.input.message} onChange={this._handleChange}/>
                 </div>
-                <div className="form-check">
+                <div className={`form-check ${styles.group}`}>
                     <input className='form-check-input' name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
                     <span className='form-check-label'>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</span>
                 </div>
