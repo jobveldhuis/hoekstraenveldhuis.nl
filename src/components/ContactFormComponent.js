@@ -145,18 +145,18 @@ class ContactForm extends React.Component {
             <form onSubmit={this._sendMail} className={styles.contactForm}>
                 <div className={`form-group ${styles.group}`}>
                     <label>Uw naam</label>
-                    <input type="text" className="form-control" name="user_name" value={this.state.input.name} onChange={this._handleChange}/>
+                    <input type="text" className={this.state.errors.user_name ? `form-control ${styles.error}` : 'form-control'} name="user_name" value={this.state.input.name} onChange={this._handleChange}/>
                 </div>
                 <div className={`form-group ${styles.group}`}>
                     <label>Uw emailadres</label>
-                    <input type="email" className="form-control" name="user_email" value={this.state.input.email} onChange={this._handleChange}/>
+                    <input type="email" className={this.state.errors.user_email ? `form-control ${styles.error}` : 'form-control'} name="user_email" value={this.state.input.email} onChange={this._handleChange}/>
                 </div>
                 <div className={`form-group ${styles.group}`}>
                     <label>Uw bericht</label>
-                    <textarea className="form-control" name="message" placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking." value={this.state.input.message} onChange={this._handleChange}/>
+                    <textarea className={this.state.errors.message ? `form-control ${styles.error}` : 'form-control'} name="message" placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking." value={this.state.input.message} onChange={this._handleChange}/>
                 </div>
                 <div className={`form-check ${styles.group}`}>
-                    <input className='form-check-input' name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
+                    <input className={this.state.errors.privacyCheck ? `form-check-input ${styles.error}` : 'form-check-input'} name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
                     <span className='form-check-label'>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</span>
                 </div>
                 <button type="submit" disabled={!this.state.valid.form}>Bericht verzenden</button>

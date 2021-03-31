@@ -15,6 +15,10 @@
     margin-bottom: 10px;
 }
 
+.error {
+    border: 1px solid #DC143C;
+}
+
 .contactForm input:focus, .contactForm textarea:focus {
     box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%);
 }
