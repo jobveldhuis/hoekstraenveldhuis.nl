@@ -33,8 +33,8 @@ const ScrollDownComponent = (props) => (
             <div className={styles.scrollDownAnimationContainer}>
                 <a href={`#${props.anchor}`}>
                     <Player
-                        autoplay
-                        loop
+                        autoplay={true}
+                        loop={true}
                         src={'/other/scrollDownAnimation.json'}
                     />
                 </a>
