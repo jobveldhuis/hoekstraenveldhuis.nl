@@ -6,7 +6,7 @@ import React from 'react'
 /**
  * Styles
  */
-import styles from '../styles/Home.module.css'
+import styles from '../styles/pages/Home.module.css'
 
 /**
  * UI Components
