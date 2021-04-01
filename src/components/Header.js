@@ -14,7 +14,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../styles/Header.module.css'
+import styles from '../styles/layouts/Header.module.css'
 
 const Header = props => {
   const router = useRouter()
