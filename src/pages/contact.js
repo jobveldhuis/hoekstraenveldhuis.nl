@@ -1,28 +1,37 @@
 import React from 'react'
-import Head from 'next/head'
+
+/**
+ * UI Components
+ */
 import Layout from '../components/Layout'
+import Meta from '../components/MetaHeadComponent'
+import ContactForm from '../components/ContactFormComponent'
+
+/**
+ * Styling
+ */
+import styles from '../styles/pages/ContactPage.module.css'
 
 export default function Contact () {
   return (
-        <div className={'websiteContainer'}>
-            <Head>
-                {/* Website meta data */}
-                {/* TODO: Add OG and schema markup */}
-                <title>Hoekstra & Veldhuis - Samen vertellen we uw verhaal</title>
-                <link rel="icon" type="image/png" href="../favicon.png" />
-                <meta name="description"
-                      content="Bij Hoekstra & Veldhuis draait alles om tekst. Of het nu gaat om tekstschrijven, vertalen of SEO optimalisatie. U bent bij ons aan het juiste adres."/>
+      <Meta>
+          <Layout
+              showFooterCTA={false}
+          >
+              <div className={styles.contactPage}>
+                  <div>
+                      <div className={styles.contactText}>
+                          <h1>Vrijblijvend contact opnemen</h1>
+                          Bent u klaar voor de volgende stap of benieuwd naar de verschillende mogelijkheden? Neem contact met ons op en vertel ons over uw project!
+                      </div>
+                      <ContactForm />
+                  </div>
+                  <div>
 
-                {/* Custom fonts */}
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Prata&display=swap" rel="stylesheet" />
-            </Head>
+                  </div>
+              </div>
 
-            <Layout
-                showFooterCTA={false}
-            >
-                Contact opnemen
-            </Layout>
-        </div>
+          </Layout>
+      </Meta>
   )
 }
