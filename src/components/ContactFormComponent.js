@@ -6,7 +6,7 @@ import React from 'react'
 /**
  * Styling
  */
-import styles from '../styles/ContactFormComponent.module.css'
+import styles from '../styles/forms/ContactFormComponent.module.css'
 
 /**
  * EmailJS
@@ -174,13 +174,13 @@ class ContactForm extends React.Component {
                     <small className={'form-text text-muted'}>{this.state.errors.user_email}</small>
                 </div>
                 <div className={`form-group ${styles.group}`}>
-                    <label>Uw bericht</label>
+                    <label>Hoe kunnen we u van dienst zijn?</label>
                     <textarea className={this.state.errors.message ? `form-control ${styles.error}` : 'form-control'} name="message" placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking." value={this.state.input.message} onChange={this._handleChange}/>
                     <small className={'form-text text-muted'}>{this.state.errors.message}</small>
                 </div>
                 <div className={`form-check ${styles.group}`}>
-                    <input className={this.state.errors.privacyCheck ? `form-check-input ${styles.error}` : 'form-check-input'} name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
-                    <span className='form-check-label'>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</span>
+                    <input className={this.state.errors.privacyCheck ? `form-check-input ${styles.error}` : 'form-check-input'} id='privacyCheck' name='privacyCheck' type='checkbox' checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
+                    <label htmlFor='privacyCheck' className={`form-check-label ${styles.checkboxLabel}`}>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</label>
                 </div>
                 <button type="submit" disabled={!this.state.valid.form}>Bericht verzenden</button>
             </form>

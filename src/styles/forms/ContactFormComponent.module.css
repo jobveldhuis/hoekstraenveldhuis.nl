@@ -2,7 +2,7 @@
     font-weight: 300;
 }
 
-.contactForm label {
+.contactForm label:not(.checkboxLabel) {
     font-weight: bolder;
 }
 
