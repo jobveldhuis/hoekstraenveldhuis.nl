@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 /**
  * Styling
  */
-import styles from '../styles/LandingPage.module.css'
+import styles from '../styles/pages/LandingPage.module.css'
 
 /**
  * UI Components
