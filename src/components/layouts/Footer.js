@@ -13,7 +13,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../styles/layouts/Footer.module.css'
+import styles from '../../styles/layouts/Footer.module.css'
 
 const Footer = props => (
     <div className={styles.footerComponent}>

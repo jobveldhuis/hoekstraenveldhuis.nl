@@ -6,8 +6,8 @@ import React from 'react'
 /**
  * UI Elements
  */
-import Layout from '../components/Layout'
-import Meta from '../components/MetaHeadComponent'
+import Layout from '../components/layouts/Layout'
+import Meta from '../components/layouts/MetaHeadComponent'
 
 export default function PageNotFound () {
   return (

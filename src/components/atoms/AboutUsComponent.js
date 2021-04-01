@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../styles/AboutUsComponent.module.css'
+import styles from '../../styles/atoms/AboutUsComponent.module.css'
 
 const AboutUsComponent = (props) => (
     <div className={styles.aboutUsContainer}>

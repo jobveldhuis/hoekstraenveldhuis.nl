@@ -3,9 +3,9 @@ import React from 'react'
 /**
  * UI Components
  */
-import Layout from '../components/Layout'
-import Meta from '../components/MetaHeadComponent'
-import ContactForm from '../components/ContactFormComponent'
+import Layout from '../components/layouts/Layout'
+import Meta from '../components/layouts/MetaHeadComponent'
+import ContactForm from '../components/forms/ContactFormComponent'
 
 /**
  * Styling

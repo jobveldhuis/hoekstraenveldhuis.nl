@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../styles/ProjectOverviewComponent.module.css'
+import styles from '../../styles/ProjectOverviewComponent.module.css'
 
 const ProjectOverviewComponent = (props) => (
     <div className={styles.projectOverviewContainer}>
@@ -24,21 +24,21 @@ const ProjectOverviewComponent = (props) => (
                     { index % 2 === 0 && (
                     <>
                         <div>
-                            <span className={styles.projectTitle}>{project.title}</span>
+                            <span className={styles.projectTitle}>{project.name}</span>
                             <h3 className={styles.projectDescription}>{project.description}</h3>
                         </div>
                         <div>
-                            <img src={project.image}/>
+                            <img src={project.image} alt={project.name}/>
                         </div>
                     </>
                     )}
                     { !(index % 2 === 0) && (
                         <>
                             <div>
-                                <img src={project.image}/>
+                                <img src={project.image} alt={project.name}/>
                             </div>
                             <div>
-                                <span className={styles.projectTitle}>{project.title}</span>
+                                <span className={styles.projectTitle}>{project.name}</span>
                                 <h3 className={styles.projectDescription}>{project.description}</h3>
                             </div>
                         </>

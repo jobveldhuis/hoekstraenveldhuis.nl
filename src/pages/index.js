@@ -11,11 +11,11 @@ import styles from '../styles/pages/Home.module.css'
 /**
  * UI Components
  */
-import Layout from '../components/Layout'
-import Meta from '../components/MetaHeadComponent'
-import AboutUsComponent from '../components/AboutUsComponent'
-import ProjectOverviewComponent from '../components/ProjectOverviewComponent'
-import ScrollDownComponent from '../components/ScrollDownComponent'
+import Layout from '../components/layouts/Layout'
+import Meta from '../components/layouts/MetaHeadComponent'
+import AboutUsComponent from '../components/atoms/AboutUsComponent'
+import ProjectOverviewComponent from '../components/atoms/ProjectOverviewComponent'
+import ScrollDownComponent from '../components/atoms/ScrollDownComponent'
 
 export default function Home () {
   const services = [
@@ -60,22 +60,22 @@ export default function Home () {
                               title={'Onze werkzaamheden'}
                               projects={[
                                 {
-                                  title: 'Logopediepraktijk Urk',
+                                  name: 'Logopediepraktijk Urk',
                                   description: 'Van wollige taal en jargon, naar leesbare taal voor kinderen en volwassenen.',
                                   image: 'images/henv-client-highlight-1.svg'
                                 },
                                 {
-                                  title: 'Esthegi',
+                                  name: 'Esthegi',
                                   description: 'Wervende teksten over gevoelige onderwerpen, geoptimaliseerd voor zoekmachines.',
                                   image: 'images/henv-client-highlight-2.svg'
                                 },
                                 {
-                                  title: 'TomTom Interim Management',
+                                  name: 'TomTom Interim Management',
                                   description: 'Adviezen en bijstand op het gebied van visuele communicatie van kernwaarden.',
                                   image: 'images/henv-client-highlight-3.svg'
                                 },
                                 {
-                                  title: 'ISG Arcus',
+                                  name: 'ISG Arcus',
                                   description: 'Toneelstukken, scripts en auditiemateriaal voor verschillende uitvoeringen.',
                                   image: 'images/henv-client-highlight-4.svg'
                                 }

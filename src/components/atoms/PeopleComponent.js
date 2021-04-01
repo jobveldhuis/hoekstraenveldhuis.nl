@@ -11,14 +11,14 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../styles/PeopleComponent.module.css'
+import styles from '../../styles/PeopleComponent.module.css'
 
 const PeopleComponent = props => {
   return (
         <div className={styles.peopleContainer}>
             { props.image && (
                 <div className={styles.image}>
-                    <img src={props.image} />
+                    <img src={props.image} alt={`Afbeelding van ${props.name}`}/>
                 </div>
             )}
             <div className={styles.peopleInfo}>

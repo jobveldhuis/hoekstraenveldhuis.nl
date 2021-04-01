@@ -11,14 +11,14 @@ import PropTypes from 'prop-types'
 /**
  * Styling
  */
-import styles from '../styles/pages/LandingPage.module.css'
+import styles from '../../styles/pages/LandingPage.module.css'
 
 /**
  * UI Components
  */
-import Layout from '../components/Layout'
-import ContactBadgeComponent from '../components/ContactBadgeComponent'
-import Meta from '../components/MetaHeadComponent'
+import Layout from '../../components/layouts/Layout'
+import ContactBadgeComponent from '../../components/atoms/ContactBadgeComponent'
+import Meta from '../../components/layouts/MetaHeadComponent'
 
 const LandingPage = (props) => (
     <Meta

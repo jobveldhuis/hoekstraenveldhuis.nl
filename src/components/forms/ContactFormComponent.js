@@ -6,7 +6,7 @@ import React from 'react'
 /**
  * Styling
  */
-import styles from '../styles/forms/ContactFormComponent.module.css'
+import styles from '../../styles/forms/ContactFormComponent.module.css'
 
 /**
  * EmailJS

@@ -6,7 +6,7 @@ import React from 'react'
 /**
  * UI Components
  */
-import LandingPage from '../../components/LandingPage'
+import LandingPage from '../../components/layouts/LandingPage'
 
 export default function TextCheck () {
   return (

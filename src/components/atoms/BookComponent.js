@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../styles/BookComponent.module.css'
+import styles from '../../styles/atoms/BookComponent.module.css'
 
 const BookComponent = props => {
   return (
@@ -19,7 +19,7 @@ const BookComponent = props => {
             <div>
                 { props.image && (
                     <>
-                        <img src={props.image} />
+                        <img src={props.image} alt={`Omslag van ${props.title}`}/>
                         <br />
                     </>
                 )}

@@ -11,8 +11,8 @@ import Head from 'next/head'
 /**
  * UI Components
  */
-import Layout from '../components/Layout'
-import PeopleComponent from '../components/PeopleComponent'
+import Layout from '../components/layouts/Layout'
+import PeopleComponent from '../components/atoms/PeopleComponent'
 
 export default function AboutUs () {
   return (

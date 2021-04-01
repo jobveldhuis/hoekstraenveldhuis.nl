@@ -11,8 +11,8 @@ import Head from 'next/head'
 /**
  * UI Components
  */
-import Layout from '../components/Layout'
-import BookComponent from '../components/BookComponent'
+import Layout from '../components/layouts/Layout'
+import BookComponent from '../components/atoms/BookComponent'
 
 export default function OurBooks () {
   return (
