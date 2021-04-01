@@ -166,14 +166,17 @@ class ContactForm extends React.Component {
                 <div className={`form-group ${styles.group}`}>
                     <label>Uw naam</label>
                     <input type="text" className={this.state.errors.user_name ? `form-control ${styles.error}` : 'form-control'} name="user_name" value={this.state.input.name} onChange={this._handleChange}/>
+                    <small className={'form-text text-muted'}>{this.state.errors.user_name}</small>
                 </div>
                 <div className={`form-group ${styles.group}`}>
                     <label>Uw emailadres</label>
                     <input type="email" className={this.state.errors.user_email ? `form-control ${styles.error}` : 'form-control'} name="user_email" value={this.state.input.email} onChange={this._handleChange}/>
+                    <small className={'form-text text-muted'}>{this.state.errors.user_email}</small>
                 </div>
                 <div className={`form-group ${styles.group}`}>
                     <label>Uw bericht</label>
                     <textarea className={this.state.errors.message ? `form-control ${styles.error}` : 'form-control'} name="message" placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking." value={this.state.input.message} onChange={this._handleChange}/>
+                    <small className={'form-text text-muted'}>{this.state.errors.message}</small>
                 </div>
                 <div className={`form-check ${styles.group}`}>
                     <input className={this.state.errors.privacyCheck ? `form-check-input ${styles.error}` : 'form-check-input'} name="privacyCheck" type="checkbox" checked={this.state.input.privacyCheck} onChange={this._handleChange}/>
