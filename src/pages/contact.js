@@ -1,3 +1,6 @@
+/**
+ * React
+ */
 import React from 'react'
 
 /**
@@ -6,6 +9,7 @@ import React from 'react'
 import Layout from '../components/layouts/Layout'
 import Meta from '../components/layouts/MetaHeadComponent'
 import ContactForm from '../components/forms/ContactFormComponent'
+import Map from '../components/atoms/MapComponent'
 
 /**
  * Styling
@@ -20,14 +24,14 @@ export default function Contact () {
           >
               <div className={styles.contactPage}>
                   <div>
+                      <h1>Vrijblijvend contact opnemen</h1>
                       <div className={styles.contactText}>
-                          <h1>Vrijblijvend contact opnemen</h1>
                           Bent u klaar voor de volgende stap of benieuwd naar de verschillende mogelijkheden? Neem contact met ons op en vertel ons over uw project!
                       </div>
                       <ContactForm />
                   </div>
-                  <div>
-
+                  <div className={styles.mapContainer}>
+                      <Map />
                   </div>
               </div>
 

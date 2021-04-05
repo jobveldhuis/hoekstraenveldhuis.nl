@@ -16,8 +16,8 @@ const officeLocationDetails = {
 
 const Map = () => {
   const [viewport, setViewport] = useState({
-    width: 400,
-    height: 400,
+    width: '100%',
+    height: 300,
     latitude: officeLocationDetails.latitude,
     longitude: officeLocationDetails.longitude,
     zoom: 16
