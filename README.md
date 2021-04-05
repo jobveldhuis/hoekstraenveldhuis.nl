@@ -1,13 +1,16 @@
 # hoekstraenveldhuis.nl
-This repo contains the public source code for the Hoekstra & Veldhuis B.V. website that was originally built in WordPress. This is an active repo from which deployments to the live environment are done.
+This repository contains the public source code of the website of Hoekstra & Veldhuis B.V., which has been [licensed](https://github.com/jobveldhuis/hoekstraenveldhuis.nl/blob/main/LICENSE) using the BSD 3-Clause license.
 
-We are currently working on a NextJS app of these HTML template files. The progress can be found on the [next-step-forward](https://github.com/jobveldhuis/hoekstraenveldhuis.nl/tree/next-step-forward) branch.
+We originally built our website in Webflow, then transferred to this repository in plain HTML. It has been a work in progress for over a year. Many ideas have crossed our minds since, including a WordPress theme and a Jekyll website. In the end, we have decided to go with NextJS for its flexibility and performance.
 
-## No license?
-As of may 2020, the conscious decision has been made to make this an unlicensed repo. The contents of this repo, including the website, belong to Hoekstra & Veldhuis. Because we believe in making things available to the public, no matter how small, we have decided to publish its source code. Feel free to get inspired by our website, but we kindly request you do not copy it 1:1.
+## Get started quickly
+1. Git clone into the project
+2. Copy `.env` and rename the copied file to `.env.local`
+3. Set environment variables according to your needs
+4. Run `yarn dev` to start the application locally
 
-## Future plans?
-Our website was originally built in Webflow (yeah, I know). After this, we decided to port our Webflow export to a Bootstrap-powered HTML website. In the future, we will be transferring this HTML template into a WordPress theme. The original HTML files will then be moved to a new branch.
+## Building and deploying to production
+All deployments are automatic and will be performed by Vercel on merge to the `main` branch. In any other branch, you will be given a preview deployment after pushing to your branch.
 
-## Currently in use?
-No, we are still working on the HTML port of the original Webflow files.
+## Contributing
+This project is currently not open to contributors, as it is being maintained and actively used by Hoekstra & Veldhuis B.V.

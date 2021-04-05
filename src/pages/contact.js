@@ -18,7 +18,10 @@ import styles from '../styles/pages/ContactPage.module.css'
 
 export default function Contact () {
   return (
-      <Meta>
+      <Meta
+          pageName={'Contact opnemen'}
+          description={'Vrijblijvend contact opnemen. Bent u klaar voor de volgende stap of benieuwd naar de verschillende mogelijkheden? Neem contact met ons op!'}
+      >
           <Layout
               showFooterCTA={false}
           >
