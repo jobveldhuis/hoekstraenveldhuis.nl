@@ -1,0 +1,17 @@
+.contactPage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contactPage h1 {
+    font-size: 30px;
+}
+
+.contactText {
+    padding-bottom: 20px;
+}
+
+.mapContainer {
+    margin-top: 50px;
+    padding-left: 40px;
+}

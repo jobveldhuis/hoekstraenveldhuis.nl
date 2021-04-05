@@ -1,0 +1,95 @@
+.navigation
+{
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+    align-self: center;
+    font-family: "Prata", serif;
+    font-size: 14px;
+    padding: 30px 0;
+}
+.iconBar
+{
+    width: 22px;
+    height: 2px;
+    background-color: #B6B6B6;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+.navbarToggler .topBar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbarToggler .middleBar {
+    opacity: 0;
+}
+
+.navbarToggler .bottomBar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbarToggler.collapsed .topBar {
+    transform: rotate(0);
+}
+
+.navbarToggler.collapsed .middleBar {
+    opacity: 1;
+}
+
+.navbarToggler.collapsed .bottomBar {
+    transform: rotate(0);
+}
+
+nav.navbar
+{
+    justify-content: space-between;
+    font-size: 14px;
+}
+.logo
+{
+    height: 60px;
+}
+.navbarCollapse
+{
+    overflow: hidden;
+}
+.navbarToggler
+{
+    border: none;
+    border-radius: 0;
+    outline: none;
+    padding: 15px;
+}
+
+.navbarCollapse.collapsing, .navbarCollapse.show
+{
+    position: absolute;
+    top: 100%;
+    background-color: #C8C8C8;
+    display: block;
+    width: 95%;
+}
+ul.nav
+{
+    list-style-type: none;
+}
+.navLink
+{
+    padding: 0 1.5rem;
+}
+.navLink.current a
+{
+    color: #2274a5;
+    pointer-events: none;
+}
+.nav a
+{
+    color: #333;
+}
+.nav a:hover
+{
+    color: #2274a5;
+}

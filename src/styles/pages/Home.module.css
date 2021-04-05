@@ -1,0 +1,20 @@
+.projectOverviewBackground {
+    background-color: #e9f9f9;
+}
+
+.elementContainer {
+    max-width: 940px;
+    margin: 0 auto 50px auto;
+    padding-bottom: 50px;
+}
+
+.aboutContainer {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.scrollDownContainer {
+    max-width: 940px;
+    height: 70vh;
+    margin: 0 auto;
+}
