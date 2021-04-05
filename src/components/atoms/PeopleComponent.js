@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../../styles/PeopleComponent.module.css'
+import styles from '../../styles/atoms/PeopleComponent.module.css'
 
 const PeopleComponent = props => {
   return (

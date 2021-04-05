@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 /**
  * Styles
  */
-import styles from '../../styles/ProjectOverviewComponent.module.css'
+import styles from '../../styles/atoms/ProjectOverviewComponent.module.css'
 
 const ProjectOverviewComponent = (props) => (
     <div className={styles.projectOverviewContainer}>

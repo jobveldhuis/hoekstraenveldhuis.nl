@@ -6,7 +6,7 @@ import React from 'react'
 /**
  * Styles
  */
-import styles from '../../styles/ContactBadgeComponent.module.css'
+import styles from '../../styles/atoms/ContactBadgeComponent.module.css'
 
 const ContactBadgeComponent = () => (
     <div className={styles.contactBadgeComponentContainer}>

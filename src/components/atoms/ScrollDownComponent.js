@@ -16,7 +16,7 @@ import { Player } from '@lottiefiles/react-lottie-player'
 /**
  * Styling
  */
-import styles from '../../styles/ScrollDownComponent.module.css'
+import styles from '../../styles/atoms/ScrollDownComponent.module.css'
 
 const ScrollDownComponent = (props) => (
     <div className={styles.scrollDownContainer}>
