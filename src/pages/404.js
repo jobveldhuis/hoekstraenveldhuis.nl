@@ -13,6 +13,7 @@ export default function PageNotFound () {
   return (
         <Meta
             pageName='404'
+            description={'Die pagina kon niet worden gevonden. Wil je misschien terugkeren naar de homepagina?'}
         >
             <Layout showFooterCTA={false}>
                 <div style={{ paddingTop: '10%' }}>
