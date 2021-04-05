@@ -6,11 +6,11 @@ import React, { useState } from 'react'
 /**
  * Mapbox
  */
-import ReactMapGL, { Marker } from 'react-map-gl'
+import ReactMapGL from 'react-map-gl'
 import 'mapbox-gl/dist/mapbox-gl.css'
 
 const officeLocationDetails = {
-  latitude: 52.496270,
+  latitude: 52.496269,
   longitude: 5.500330
 }
 
@@ -20,7 +20,7 @@ const Map = () => {
     height: 300,
     latitude: officeLocationDetails.latitude,
     longitude: officeLocationDetails.longitude,
-    zoom: 16
+    zoom: 10
   })
 
   return (
@@ -29,11 +29,7 @@ const Map = () => {
             onViewportChange={nextViewport => setViewport(nextViewport)}
             mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
             mapStyle={'mapbox://styles/hoekstraenveldhuis/ckn55nvuj08um17oc0tga6gdx'}
-        >
-          <Marker latitude={officeLocationDetails.latitude} longitude={officeLocationDetails.longitude} >
-            Ons kantoor
-          </Marker>
-        </ReactMapGL>
+        />
   )
 }
 
