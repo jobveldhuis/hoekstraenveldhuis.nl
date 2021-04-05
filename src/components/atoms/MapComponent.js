@@ -28,6 +28,7 @@ const Map = () => {
             {...viewport}
             onViewportChange={nextViewport => setViewport(nextViewport)}
             mapboxApiAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
+            mapStyle={'mapbox://styles/hoekstraenveldhuis/ckn55nvuj08um17oc0tga6gdx'}
         >
           <Marker latitude={officeLocationDetails.latitude} longitude={officeLocationDetails.longitude} >
             Ons kantoor
