@@ -1,11 +1,3 @@
-.mobileOnly {
-    display: block;
-}
-
-.desktopOnly {
-    display: none;
-}
-
 .projectGrid {
     display: grid;
     grid-template-columns: 100%;
@@ -43,14 +35,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .mobileOnly {
-        display: none;
-    }
-
-    .desktopOnly {
-        display: block;
-    }
-
     .projectGrid {
         grid-template-columns: 50% auto;
         grid-column-gap: 50px;

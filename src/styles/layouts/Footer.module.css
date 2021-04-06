@@ -30,10 +30,6 @@
     text-align: center;
 }
 
-.hideMobile {
-    display: none;
-}
-
 .ctaContainer:hover {
     background-color: #2274a5;
 }
