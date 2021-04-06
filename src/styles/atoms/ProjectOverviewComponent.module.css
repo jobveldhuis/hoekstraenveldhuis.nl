@@ -20,7 +20,7 @@
 }
 
 .projectOverviewContainer {
-    padding: 15px;
+    padding: 30px 0;
 }
 
 .projectOverviewContainer img {
@@ -29,7 +29,6 @@
 }
 
 .projectOverviewContainer h2 {
-    padding: 15px 0;
     font-size: 24px;
     color: #676767;
 }
