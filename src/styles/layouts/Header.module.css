@@ -1,12 +1,11 @@
 .navigation
 {
-    max-width: 940px;
     width: 100%;
     margin: 0 auto;
     align-self: center;
     font-family: "Prata", serif;
     font-size: 14px;
-    padding: 30px 0;
+    padding: 10px 15px 30px;
 }
 .iconBar
 {
@@ -92,4 +91,11 @@ ul.nav
 .nav a:hover
 {
     color: #2274a5;
+}
+
+@media only screen and (min-width: 768px) {
+    .navigation {
+        max-width: 940px;
+        padding: 30px 0;
+    }
 }
