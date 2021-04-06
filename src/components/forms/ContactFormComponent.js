@@ -5,11 +5,6 @@ import * as React from 'react'
 import { useForm } from 'react-hook-form'
 
 /**
- * Next
- */
-import { useRouter } from 'next/router'
-
-/**
  * Axios
  */
 import axios from 'axios'
@@ -21,7 +16,6 @@ import styles from '../../styles/forms/ContactFormComponent.module.css'
 
 const ContactForm = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm()
-  const router = useRouter()
   async function onSubmitForm (values) {
     const config = {
       method: 'POST',
