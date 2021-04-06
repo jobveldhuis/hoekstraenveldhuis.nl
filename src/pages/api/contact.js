@@ -25,11 +25,8 @@ export default async (req, res) => {
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Bericht:</strong> ${message}</p>`
     })
-
-    console.log(`Bericht verstuurd via contactformulier: ${emailResponse.messageId}`)
+    res.status(200).json({ email: emailResponse })
   } catch (err) {
-    console.log(err)
+    res.status(500).json({ error: err })
   }
-
-  res.status(200).json(req.body)
 }
