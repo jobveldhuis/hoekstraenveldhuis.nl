@@ -7,7 +7,7 @@
 }
 
 .scrollDownContainer h1, .scrollDownContainer h2 {
-    font-size: 38px;
+    font-size: 30px;
 }
 
 .scrollDownContainer p {
@@ -15,10 +15,21 @@
 }
 
 .scrollDownContent {
-    max-width: 70%;
+    max-width: 100%;
+    padding: 0 15px;
 }
 
 .scrollDownAnimationContainer {
     max-width: 60px;
     margin-left: -7px;
+}
+
+@media only screen and (min-width: 768px) {
+    .scrollDownContainer h1, .scrollDownContainer h2 {
+        font-size: 38px;
+    }
+
+    .scrollDownContent {
+        max-width: 70%;
+    }
 }

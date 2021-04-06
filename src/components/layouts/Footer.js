@@ -37,12 +37,12 @@ const Footer = props => (
                         <a className={`${styles.underlined} underlined`} href={'mailto:info@henv.online'}>info@henv.online</a><br />
                         Copyright 2021
                     </div>
-                    <div>
+                    <div className='hideMobile'>
                         <strong>Volg ons op</strong><br />
                         <a className={`${styles.underlined} underlined`} href={'https://facebook.com/hoekstraenveldhuis'} rel={'nofollow'}>Facebook</a><br />
                         <a className={`${styles.underlined} underlined`} href={'https://instagram.com/hoekstraenveldhuis'} rel={'nofollow'}>Instagram</a><br />
                     </div>
-                    <div>
+                    <div className='hideMobile'>
                         <strong>Kantoor</strong><br />
                         Ekenstein 38<br />
                         8226RH te Lelystad

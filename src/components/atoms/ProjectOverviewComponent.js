@@ -23,11 +23,14 @@ const ProjectOverviewComponent = (props) => (
                 <React.Fragment key={index}>
                     { index % 2 === 0 && (
                     <>
+                        <div className='hideDesktop'>
+                            <img src={project.image} alt={project.name}/>
+                        </div>
                         <div>
                             <span className={styles.projectTitle}>{project.name}</span>
                             <h3 className={styles.projectDescription}>{project.description}</h3>
                         </div>
-                        <div>
+                        <div className='hideMobile'>
                             <img src={project.image} alt={project.name}/>
                         </div>
                     </>

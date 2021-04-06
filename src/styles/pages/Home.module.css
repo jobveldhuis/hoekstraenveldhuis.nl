@@ -5,7 +5,7 @@
 .elementContainer {
     max-width: 940px;
     margin: 0 auto 50px auto;
-    padding-bottom: 50px;
+    padding: 0 15px;
 }
 
 .aboutContainer {
@@ -17,4 +17,10 @@
     max-width: 940px;
     height: 70vh;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .elementContainer {
+        padding-bottom: 50px;
+    }
 }

@@ -93,3 +93,21 @@ a.underlined::after {
 a.underlined:hover::after {
   width: 100%;
 }
+
+.hideMobile {
+  display: none;
+}
+
+.hideDesktop {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .hideMobile {
+    display: block;
+  }
+
+  .hideDesktop {
+    display: none;
+  }
+}
