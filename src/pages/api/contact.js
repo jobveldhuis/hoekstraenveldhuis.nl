@@ -10,14 +10,14 @@ export default async (req, res) => {
     port: process.env.SMTP_PORT,
     secure: true,
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD
     }
   })
 
   try {
     const emailResponse = await transporter.sendMail({
-      from: email,
+      from: 'contact@henv.online',
       to: 'info@henv.online',
       subject: `Nieuw bericht van ${name}`,
       html: `<p>We ontvingen een nieuw bericht via ons contactformulier.</p>
