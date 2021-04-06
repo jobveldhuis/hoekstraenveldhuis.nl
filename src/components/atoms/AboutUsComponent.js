@@ -18,7 +18,7 @@ const AboutUsComponent = (props) => (
         <h2>{props.title}</h2>
 
         <div className={styles.aboutUsGrid}>
-            <div className={styles.servicesMenu}>
+            <div className={`${styles.servicesMenu} hideMobile`}>
                 {props.services.map((service, index) => (
                     <React.Fragment key={index}>
                         <a href={service.link} className={'underlined'}>
