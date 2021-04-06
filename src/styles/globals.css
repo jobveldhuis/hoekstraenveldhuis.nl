@@ -11,6 +11,12 @@ html {
   height: 100%;
 }
 
+.Toastify__toast-body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
 body {
   min-height: 100%;
 }
