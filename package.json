@@ -17,7 +17,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-hook-form": "^7.0.2",
-    "react-map-gl": "^6.1.11"
+    "react-map-gl": "^6.1.11",
+    "react-toastify": "^7.0.3"
   },
   "devDependencies": {
     "eslint": "^7.22.0",
