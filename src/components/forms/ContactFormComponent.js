@@ -5,6 +5,11 @@ import * as React from 'react'
 import { useForm } from 'react-hook-form'
 
 /**
+ * Next
+ */
+import { useRouter } from 'next/router'
+
+/**
  * Axios
  */
 import axios from 'axios'
@@ -15,7 +20,8 @@ import axios from 'axios'
 import styles from '../../styles/forms/ContactFormComponent.module.css'
 
 const ContactForm = () => {
-  const { register, handleSubmit, errors, reset } = useForm()
+  const { register, handleSubmit, formState: { errors }, reset } = useForm()
+  const router = useRouter()
   async function onSubmitForm (values) {
     const config = {
       method: 'POST',
@@ -28,7 +34,9 @@ const ContactForm = () => {
 
     try {
       const response = await axios(config)
-      console.log(response)
+      if (response.status === 200) {
+        reset()
+      }
     } catch (err) {
       console.log(err)
     }
@@ -38,42 +46,53 @@ const ContactForm = () => {
             <div className={`form-group ${styles.group}`}>
                 <label>Uw naam</label>
                 <input
-                    {...register('name')}
+                    {...register('name', { required: true })}
                     type="text"
                     name="name"
-                    className={errors?.name ? `form-control ${styles.error}` : 'form-control'}
+                    className={errors.name ? `form-control ${styles.error}` : 'form-control'}
                 />
                 <small className={'form-text text-muted'}>
-                    {errors?.name?.message}
+                    {errors.name && 'Uw naam is een verplicht veld.'}
                 </small>
             </div>
             <div className={`form-group ${styles.group}`}>
                 <label>Uw emailadres</label>
                 <input
-                    {...register('email')}
+                    {...register('email', { required: true })}
                     type="email"
                     name="email"
-                    className={errors?.email ? `form-control ${styles.error}` : 'form-control'}
+                    className={errors.email ? `form-control ${styles.error}` : 'form-control'}
                 />
                 <small className={'form-text text-muted'}>
-                    {errors?.email?.message}
+                    {errors.email && 'Op welk e-mailadres kunnen we u bereiken?'}
                 </small>
             </div>
             <div className={`form-group ${styles.group}`}>
                 <label>Hoe kunnen we u van dienst zijn?</label>
                 <textarea
-                    {...register('message')}
+                    {...register('message', { required: true })}
                     name="message"
                     placeholder="Vertel ons over uw project, stel uw vraag of plaats uw opmerking."
-                    className={errors?.message ? `form-control ${styles.error}` : 'form-control'}
+                    className={errors.message ? `form-control ${styles.error}` : 'form-control'}
                 />
                 <small className={'form-text text-muted'}>
-                    {errors?.message?.message}
+                    {errors.message && 'Hoe kunnen we u helpen? Laat een bericht achter!'}
                 </small>
             </div>
             <div className={`form-check ${styles.group}`}>
-                <input className={errors?.privacyCheck ? `form-check-input ${styles.error}` : 'form-check-input'} id='privacyCheck' name='privacyCheck' type='checkbox' />
-                <label htmlFor='privacyCheck' className={`form-check-label ${styles.checkboxLabel}`}>Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.</label>
+                <input
+                    {...register('privacyCheck', { required: true })}
+                    name='privacyCheck'
+                    id='privacyCheck'
+                    type='checkbox'
+                    className={errors.privacyCheck ? `form-check-input ${styles.error}` : 'form-check-input'}
+                />
+                <label
+                    htmlFor='privacyCheck'
+                    className={`form-check-label ${styles.checkboxLabel}`}
+                >
+                    Ik ga akkoord dat bij het verzenden van dit formulier bovenstaande gegevens worden verstuurd aan Hoekstra & Veldhuis. Voor meer informatie, zie ons <a className="underlined" href="/documents/hoekstra-en-veldhuis-privacybeleid.pdf">privacybeleid</a>.
+                </label>
             </div>
             <button type="submit">Bericht verzenden</button>
         </form>
