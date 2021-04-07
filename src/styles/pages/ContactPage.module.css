@@ -1,17 +1,36 @@
 .contactPage {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 100%;
+    padding: 0 15px 30px;
+}
+
+.contactPage button {
+    width: 100%;
 }
 
 .contactPage h1 {
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .contactText {
     padding-bottom: 20px;
 }
 
-.mapContainer {
-    margin-top: 50px;
-    padding-left: 40px;
+@media only screen and (min-width: 768px) {
+    .contactPage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contactPage h1 {
+        font-size: 30px;
+    }
+
+    .contactPage button {
+        width: auto;
+    }
+
+    .mapContainer {
+        margin-top: 50px;
+        padding-left: 40px;
+    }
 }

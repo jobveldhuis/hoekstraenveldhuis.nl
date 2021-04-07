@@ -33,7 +33,7 @@ export default function Contact () {
                       </div>
                       <ContactForm />
                   </div>
-                  <div className={styles.mapContainer}>
+                  <div className={`${styles.mapContainer} hideMobile`}>
                       <Map />
                   </div>
               </div>
