@@ -94,6 +94,7 @@ a.underlined:hover::after {
   width: 100%;
 }
 
+/* Responsive show and hide */
 .hideMobile {
   display: none;
 }
@@ -102,6 +103,27 @@ a.underlined:hover::after {
   display: block;
 }
 
+/* Override Bootstrap Navbar styling */
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav a
+{
+  color: #333 !important;
+}
+.navbar-nav a:hover
+{
+  color: #2274a5 !important;
+}
+
+.navbar-nav .current
+{
+  color: #2274a5 !important;
+  pointer-events: none;
+}
+
+/* Responsive show and hide */
 @media only screen and (min-width: 768px) {
   .hideMobile {
     display: block;
